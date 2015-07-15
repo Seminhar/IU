@@ -87,18 +87,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f350396f-8cc9-46c1-bd28-a7c4cb1e066e" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\Seminhar\Android\IU\out\production\IU\com\myim\Views\SettingActivity$7.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/IU.apk" afterPath="$PROJECT_DIR$/out/production/IU/IU.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/IU.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/IU/IU.unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$2.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$6.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/myim/Views/SettingActivity.java" afterPath="$PROJECT_DIR$/src/com/myim/Views/SettingActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MOVED" beforePath="E:\Seminhar\Android\IU\out\production\IU\com\myim\Views\SettingActivity$2.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$1.class" />
-      <change type="MOVED" beforePath="E:\Seminhar\Android\IU\out\production\IU\com\myim\Views\SettingActivity$4.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$3.class" />
-      <change type="MOVED" beforePath="E:\Seminhar\Android\IU\out\production\IU\com\myim\Views\SettingActivity$5.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$4.class" />
-      <change type="MOVED" beforePath="E:\Seminhar\Android\IU\out\production\IU\com\myim\Views\SettingActivity$6.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$5.class" />
     </list>
     <ignored path="IU.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -846,7 +840,7 @@
       <workItem from="1436922801057" duration="614000" />
       <workItem from="1436923492921" duration="9512000" />
       <workItem from="1436937064534" duration="1345000" />
-      <workItem from="1436939518916" duration="6625000" />
+      <workItem from="1436939518916" duration="6649000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1436939830653</created>
@@ -860,11 +854,17 @@
       <option name="project" value="LOCAL" />
       <updated>1436939843181</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <created>1436948908918</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1436948908918</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240558000" />
+    <option name="totallyTimeSpent" value="240582000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -958,7 +958,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nothing" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
