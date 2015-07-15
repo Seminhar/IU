@@ -50,7 +50,7 @@ public class SettingActivity extends Activity {
         //获取系统震动服务类
         vibrator = (Vibrator) getBaseContext().getSystemService(Service.VIBRATOR_SERVICE);
 
-        result=audioMa.requestAudioFocus(audioFocusChangeListener,AudioManager.STREAM_MUSIC,AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
+//        result=audioMa.requestAudioFocus(audioFocusChangeListener,AudioManager.STREAM_MUSIC,AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
         setSwitchListener();
         initSwitch();
@@ -61,44 +61,44 @@ public class SettingActivity extends Activity {
     }
 
 
-    AudioManager.OnAudioFocusChangeListener audioFocusChangeListener=new AudioManager.OnAudioFocusChangeListener() {
-        @Override
-        public void onAudioFocusChange(int focusChange) {
-                if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT) {
-                    if (mediaPlayer.isPlaying()) {
-                        mediaPlayer.pause();
-                    }
-
-                } else if (focusChange == AudioManager.AUDIOFOCUS_GAIN) {
-                    if (mediaPlayer == null) {
-
-                    } else if (!mediaPlayer.isPlaying()) {
-
-                        mediaPlayer.start();
-
-                    }
-                    // Resume playback
-                } else if (focusChange == AudioManager.AUDIOFOCUS_LOSS) {
-                    if (mediaPlayer.isPlaying()) {
-
-                        mediaPlayer.stop();
-                    }
-                    audioMa.abandonAudioFocus(audioFocusChangeListener);
-                    // Stop playback
-                } else if (focusChange == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
-                    if (mediaPlayer.isPlaying()) {
-                        mediaPlayer.stop();
-                    }
-
-                } else if (focusChange == AudioManager.AUDIOFOCUS_REQUEST_FAILED) {
-                    if (mediaPlayer.isPlaying()) {
-                        mediaPlayer.stop();
-                    }
-
-                }
-            }
-
-    };
+//    AudioManager.OnAudioFocusChangeListener audioFocusChangeListener=new AudioManager.OnAudioFocusChangeListener() {
+//        @Override
+//        public void onAudioFocusChange(int focusChange) {
+//                if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT) {
+//                    if (mediaPlayer.isPlaying()) {
+//                        mediaPlayer.pause();
+//                    }
+//
+//                } else if (focusChange == AudioManager.AUDIOFOCUS_GAIN) {
+//                    if (mediaPlayer == null) {
+//
+//                    } else if (!mediaPlayer.isPlaying()) {
+//
+//                        mediaPlayer.start();
+//
+//                    }
+//                    // Resume playback
+//                } else if (focusChange == AudioManager.AUDIOFOCUS_LOSS) {
+//                    if (mediaPlayer.isPlaying()) {
+//
+//                        mediaPlayer.stop();
+//                    }
+//                    audioMa.abandonAudioFocus(audioFocusChangeListener);
+//                    // Stop playback
+//                } else if (focusChange == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+//                    if (mediaPlayer.isPlaying()) {
+//                        mediaPlayer.stop();
+//                    }
+//
+//                } else if (focusChange == AudioManager.AUDIOFOCUS_REQUEST_FAILED) {
+//                    if (mediaPlayer.isPlaying()) {
+//                        mediaPlayer.stop();
+//                    }
+//
+//                }
+//            }
+//
+//    };
 
     public void initSwitch() {
         sbNotification.setChecked(Constant.notification);
@@ -128,9 +128,9 @@ public class SettingActivity extends Activity {
                 editor.putBoolean("sound", isChecked);
                 editor.commit();
 //                如果获取焦点成功
-                if(result==AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+               // if(result==AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
                     controller.volumeSilent(audioMa, isChecked);
-                }
+                //}
             }
         });
         sbVibrate.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
