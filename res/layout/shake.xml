@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" android:background="#000000">
+
+    <RelativeLayout
+            android:id="@+id/msg_top"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_title_height"
+            android:background="@color/deepskyblue"
+            android:layout_marginTop="1dp">
+
+        <TextView
+                android:id="@+id/msg_top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附近陌生人"
+                android:textColor="@color/white"
+                android:textSize="@dimen/top_title_bar_textSize"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="395dp"
+            android:layout_weight="0.67"
+            android:id="@+id/layout">
+        <ImageView
+                android:layout_width="663dp"
+                android:layout_height="437dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center"
+                android:src="@drawable/shake_img"/>
+        <TextView
+                android:layout_width="246dp"
+                android:layout_height="46dp"
+                android:background="#000000"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="想交朋友吗？摇一摇试试~"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+    </FrameLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout1"
+            android:weightSum="1"
+            android:layout_weight="0.32">
+    </LinearLayout>
+</LinearLayout>

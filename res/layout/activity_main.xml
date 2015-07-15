@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:id="@+id/chat_title"
+        android:background="@drawable/chat_title_layer"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true">
+        <Button
+            android:id="@+id/chat_msg_button"
+            android:layout_width="match_parent"
+            android:layout_height="36dip"
+            android:layout_weight="1.9"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="3dip"
+            android:text="消息"
+            android:textColor="@android:color/white"
+            android:textSize="7pt"
+            android:background="@drawable/msg_button_back"/>
+        <TextView
+            android:id="@+id/chat_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="小芳"
+            android:textSize="8pt"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+        <ImageButton
+            android:id="@+id/chat_contact_button"
+            android:layout_width="match_parent"
+            android:layout_height="36dip"
+            android:layout_weight="2"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/chat_contact_back"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:background="@drawable/chat_title_layer"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="7dip"
+        android:paddingBottom="3dip">
+
+        <ImageButton
+            android:id="@+id/chat_bottom_look"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_weight="3.5"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/chat_bottom_look"/>
+        <ImageButton
+            android:id="@+id/chat_bottom_add"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_weight="3.5"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/chat_bottom_add" />
+        <EditText
+            android:id="@+id/chat_bottom_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_marginRight="6dip"
+            android:layout_weight="1.5"
+            android:background="@drawable/edit_fillet_shape"/>
+        <Button
+            android:id="@+id/chat_bottom_sendbutton"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_weight="3.2"
+            android:layout_marginRight="4dip"
+            android:layout_marginBottom="3dip"
+            android:background="@drawable/chat_button_fillet_shape"
+            android:text="发送"
+            android:textColor="@android:color/white"/>"
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_title"
+        android:layout_above="@id/chat_bottom_linear"
+        android:fadingEdge="none"
+        android:background="#f0f0f0"
+        android:divider="#aaaaaa"
+        android:dividerHeight="0px">
+    </ListView>
+
+</RelativeLayout>

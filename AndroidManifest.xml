@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.IU"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="11"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--访问网络权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!--访问相机-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!--震动权限-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!--扩音器-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <meta-data
+                android:name="com.amap.api.v2.apikey"
+                android:value="1e154b2a4c59059c0c863d94bf67f3b1"/>
+        <activity android:name="com.myim.Views.LoginActivity" android:label="@string/app_name">
+
+
+        </activity>
+        <activity
+                android:name="com.myim.Game.DazzlingMenuActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:configChanges="keyboardHidden|orientation">
+        </activity>
+
+        <activity
+                android:name="com.myim.Game.DazzlingActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:configChanges="keyboardHidden|orientation">
+        </activity>
+        <activity
+                android:name="com.myim.Game.Prefs"
+                android:screenOrientation="portrait"
+                android:configChanges="keyboardHidden|orientation"
+                android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+                android:name="com.myim.Game.TipsActivity"
+                android:screenOrientation="portrait"
+                android:configChanges="keyboardHidden|orientation"
+                android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+
+
+        <activity android:name="com.myim.Views.ChatActivity"/>
+        <activity android:name="com.myim.Views.MainActivity"/>
+        <activity android:name="com.myim.Views.RockActivity"/>
+        <activity android:name="com.myim.Views.RegisterActivity"/>
+        <activity android:name="com.myim.Views.PositionActivity"/>
+        <activity android:name="com.myim.Views.MsgListAllActivity"/>
+        <activity android:name="com.myim.Views.ContactActivity"/>
+        <activity android:name="com.myim.Game.game1tipsActivity"/>
+        <activity android:name="com.myim.Game.GameNumberActivity"/>
+        <activity android:name="com.myim.Views.NearbyActivity"/>
+        <activity android:name="com.myim.Views.SettingActivity"/>
+        <activity android:name="com.myim.Views.AddressActivity"/>
+        <activity android:name="com.myim.Views.AndyViewPagerActivity"/>
+        <activity android:name="com.myim.Views.PersonalActivity"/>
+        <activity android:name="com.myim.CustomTool.setAudioController"/>
+
+
+        <activity android:name="com.myim.Views.StartUpActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.myim.Services.SubscribeService"></service>
+        <service android:name="com.myim.Services.ChatService"></service>
+
+        <!--　　<receiver android:name=".RemoteControlReceiver">-->
+        <!--　　<intent-filter>-->
+        <!--　　<action android:name="android.intent.action.MEDIA_BUTTON" />-->
+        <!--　　</intent-filter>-->
+        <!--　　</receiver>-->
+    </application>
+</manifest>

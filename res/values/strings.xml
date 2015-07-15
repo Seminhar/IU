@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IU</string>
+    <string name="main_near">附近</string>
+    <string name="main_address">联系人</string>
+    <string name="main_my_msg">消息</string>
+    <string name="menu_search">搜索</string>
+    <string name="setting">设置</string>
+    <string name="personal">个人</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_label_username">帐号</string>
+    <string name="login_label_password">密码</string>
+    <string name="register">没有帐号？ <a href="#">注册</a></string>
+    <string name="register_title">注册</string>
+    <string name="login">登录</string>
+    <string name="button_logout">退出登录</string>
+    <string name="login_status_logging_in">登录中...</string>
+    <string name="password">密　　码</string>
+    <string name="repassword">再次密码</string>
+    <string name="username">　用户名</string>
+    <string name="submit">提交</string>
+    <string name="back">返回</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="nickname">昵　　称</string>
+    <string name="email">邮　　箱</string>
+    <string name="sex">性　　别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+
+    <string name="loading_data">加载数据</string>
+    <string name="registing">正在注册...</string>
+
+    <string name="localPhoto">本地图片</string>
+    <string name="camera">相机</string>
+    <string name="head_title_bar_txt">头像选择</string>
+
+
+    <string name="msg_title">消息</string>
+
+    <!--个人页-->
+
+    <string name="icon">&#160;&#160;头像</string>
+    <string name="mnickname">ben</string>
+    <string name="phone">&#160;&#160;电话</string>
+    <string name="mphone">183xxxx2011</string>
+    <string name="address">&#160;&#160;详细地址</string>
+    <string name="maddress">&#160;&#160;广西民族大学</string>
+    <string name="QQ">&#160;&#160;QQ号码</string>
+    <string name="mQQ">&#160;&#160;390XXXX58</string>
+    <string name="signature">&#160;&#160;个性签名</string>
+    <string name="msignature">我会好好的~加油！</string>
+
+
+    <!--dazzling游戏-->
+    <string name="color_black">Black</string>
+    <string name="color_white">White</string>
+    <string name="color_yellow">Yellow</string>
+    <string name="color_red">Red</string>
+    <string name="color_green">Green</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_purple">Purple</string>
+    <string name="color_gray">Gray</string>
+    <string name="start_game">开始</string>
+    <string name="options">选项</string>
+    <string name="exit">退出</string>
+    <string name="touch_to_start">点击开始游戏</string>
+    <string name="gameover_dialog_tip">Game Over!</string>
+    <string name="gameover_dialog_text_poolguy">蜗牛一样的速度 !</string>
+    <string name="gameover_dialog_text_notbad">兔子一样的速度!</string>
+    <string name="gameover_dialog_text_awesome">猎豹一样的速度 !</string>
+    <string name="gameover_dialog_text_newrecord">个人新高 !</string>
+    <string name="gameover_username_required">您的大名 !</string>
+    <string name="options_record_summary">-当前纪录:</string>
+    <string name="options_best_record_summary">-历史最佳:</string>
+    <string name="gameover_dialog_positive_button">重来</string>
+    <string name="gameover_dialog_post_score_button">解锁</string>
+    <string name="gameover_dialog_negative_button">返回</string>
+    <string name="ranking_title_loading_info">加载中. 请稍等....</string>
+    <string name="options_sounds_summary">-播放背景音乐.</string>
+    <string name="options_vibrate_summary">-开启震动效果.</string>
+    <string name="options_showtips_summary">-开始游戏前显示提示.</string>
+    <string name="tips_text">1.Dazzing 是一款简单智力小游戏，测试你的大脑反应速度、对颜色辨别的能力和处理混淆信息的能力。
+    </string>
+    <string name="tips_text2">2.游戏的玩法：首先你要看清楚最上方格子里面字体的颜色，在下面的格子中选择和字体颜色相符的文字描述，比如上面格子里面是橙色，你就要在下面选中包含“橙色”字的格子。
+    </string>
+    <string name="tips_text3">3.尽你最快的速度完成30个小关卡吧~就可以解锁了！
+    </string>
+
+</resources>

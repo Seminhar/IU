@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="registerSize">15dp</dimen>
+    <dimen name="head_title_bar">30dp</dimen>
+    <dimen name="contact_dialog_Size">40dp</dimen>
+    <dimen name="Contact_AssortView_Size">30dp</dimen>
+    <dimen name="top_title_bar_textSize">25sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="login_textSize">25dp</dimen>
+   <dimen name="top_title_height">48dp</dimen>
+    <dimen name="tab_button_bottom_textSize">12sp</dimen>
+    <dimen name="tab_button_bottom_paddingTop">5.0dp</dimen>
+    <dimen name="tab_button_bottom_drawablePadding">2.0dp</dimen>
+</resources>

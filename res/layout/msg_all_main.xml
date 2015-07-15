@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MsgListAllActivity">
+    <RelativeLayout
+            android:id="@+id/msg_top"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_title_height"
+            android:background="@color/deepskyblue"
+           >
+
+        <TextView
+                android:id="@+id/msg_top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/top_title_bar_textSize"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+    <com.myim.Operation.DeleteMsgListView
+            android:id="@+id/mListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/msg_top"
+            android:layout_above="@id/chat_bottom_linear"
+            android:fadingEdge="none"
+            android:background="@color/seashell"
+            android:divider="@color/deepskyblue"
+            android:dividerHeight="3px"/>
+
+</RelativeLayout>

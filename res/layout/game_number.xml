@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/numbergame_bg">
+    <TextView
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:text="拼图小游戏"
+            android:id="@+id/title"
+            android:textSize="30dp"
+            android:textColor="#ffe1e598"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="303dp"
+            android:layout_marginTop="20dp">
+        <TableLayout
+                android:id="@+id/table1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true">
+            <TableRow android:id="@+id/row1"
+                      android:orientation="horizontal">
+                <ImageButton android:layout_width="100dip"
+                             android:layout_height="100dip"
+                             android:id="@+id/a1"
+                             android:src="@drawable/a1">
+                </ImageButton>
+                <ImageButton android:layout_width="100dp"
+                             android:layout_height="100dp"
+                             android:id="@+id/a2"
+                             android:src="@drawable/a2">
+                </ImageButton>
+                <ImageButton android:layout_width="100dp"
+                             android:layout_height="100dp"
+                             android:src="@drawable/a3"
+                             android:id="@+id/a3">
+                </ImageButton>
+            </TableRow>
+            <TableRow android:id="@+id/row2">
+                <ImageButton android:layout_width="100dp"
+                             android:layout_height="100dp"
+                             android:src="@drawable/a4"
+                             android:id="@+id/a4">
+                </ImageButton>
+                <ImageButton android:layout_width="100dp"
+                             android:layout_height="100dp"
+                             android:src="@drawable/a5"
+                             android:id="@+id/a5">
+                </ImageButton>
+                <ImageButton android:layout_width="100dp"
+                             android:layout_height="100dp"
+                             android:src="@drawable/a6"
+                             android:id="@+id/a6">
+                </ImageButton>
+            </TableRow>
+            <TableRow android:id="@+id/row3">
+                <ImageButton android:layout_width="100dp"
+                             android:layout_height="100dp"
+                             android:src="@drawable/a7"
+                             android:id="@+id/a7">
+                </ImageButton>
+                <ImageButton android:layout_width="100dp"
+                             android:layout_height="100dp"
+                             android:src="@drawable/a8"
+                             android:id="@+id/a8">
+                </ImageButton>
+                <ImageButton android:layout_width="100dp"
+                             android:layout_height="100dp"
+                             android:src="@drawable/a9"
+                             android:id="@+id/a9">
+                </ImageButton>
+            </TableRow>
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_star"
+                android:background="@drawable/game_buttton"
+                android:layout_marginTop="20dp" android:layout_marginLeft="20dp"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_back"
+                android:background="@drawable/game_back"
+                android:layout_marginTop="20dp" android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
+

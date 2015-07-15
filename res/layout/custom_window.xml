@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+        >
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/imageView"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/profile"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="5dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="他叫森瑞"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:id="@+id/proName"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="他的位置是"
+                android:textColor="#ff5e382a"
+                android:id="@+id/location"/>
+
+            </LinearLayout>
+
+</LinearLayout>

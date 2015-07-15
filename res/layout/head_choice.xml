@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#F3F1DA"
+              android:orientation="vertical" >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/deepskyblue"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="32dp"
+                        android:gravity="center"
+                        android:text="@string/head_title_bar_txt"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/head_title_bar"
+                        android:textSize="@dimen/head_title_bar"/>
+        </LinearLayout>
+
+    <TextView
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="60dip"
+            android:text="相机"
+            android:textSize="@dimen/textSize"
+            android:textColor="@android:color/black"/>
+
+    <TextView
+            android:id="@+id/btn_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="10dip"
+
+            android:text="@string/localPhoto"
+            android:textSize="@dimen/textSize"
+            android:textColor="@android:color/black"/>
+
+</LinearLayout>

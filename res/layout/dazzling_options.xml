@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:orientation="vertical"
+    android:background="@drawable/dazzling_bg_game">
+	<ScrollView android:id="@+id/scrollview2"
+		        android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+		        android:orientation="vertical"
+                android:paddingTop="35dip"
+		        android:paddingBottom="50dip">
+		<LinearLayout
+                android:orientation="vertical"
+			    android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+			    android:paddingLeft="15dip"
+                android:paddingRight="15dip">
+			<CheckBox
+                    android:id="@+id/options_vibrate_checkbox"
+				    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+				    android:text="@string/options_vibrate_summary"
+                    android:textColor="#FF000000"/>
+			<CheckBox
+                    android:id="@+id/options_sounds_checkbox"
+				    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+				    android:text="@string/options_sounds_summary"
+                    android:textColor="#FF000000"/>
+			<CheckBox
+                    android:id="@+id/options_showtips_checkbox"
+				    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+				    android:text="@string/options_showtips_summary"
+                    android:textColor="#FF000000"/>
+		</LinearLayout>
+	</ScrollView>
+</FrameLayout>

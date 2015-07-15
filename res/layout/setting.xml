@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res/com.example.IU"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f2f0eb"
+              android:orientation="vertical">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="@dimen/top_title_height"
+                    android:background="@color/deepskyblue"
+                    android:gravity="center_vertical">
+        <TextView android:id="@+id/message_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:text="设置"
+                  android:textColor="#fff"
+                  android:textSize="@dimen/top_title_bar_textSize"
+                />
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:fadingEdge="none">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <RelativeLayout
+                    android:id="@+id/personal_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/mm_listitem_grey_normal"
+                    android:padding="10dip">
+                <TextView
+                        android:id="@+id/mymsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="我的信息"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"/>
+            </RelativeLayout>
+            <!--            android:background="@drawable/selector_preference_complete"-->
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="10dip"
+                          android:layout_marginRight="10dip"
+                          android:layout_marginTop="10dip"
+                          android:orientation="vertical">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:gravity="bottom|left"
+                        android:paddingLeft="10dip"
+                        android:text="新消息提醒"
+                        android:textColor="@color/gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <RelativeLayout
+                        android:id="@+id/rl_switch_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mm_listitem_grey_normal"
+                        >
+                    <com.myim.CustomTool.SwitchButton
+                            style="@style/item"
+                            android:id="@+id/switch_notification"
+                            android:text="接受推送"
+                            android:checked="true"
+                            app:withTextInterval="16dp"
+                            app:frameDrawable="@drawable/switch_frame"
+                            app:stateDrawable="@drawable/selector_switch_state"
+                            app:stateMaskDrawable="@drawable/switch_state_mask"
+                            app:sliderDrawable="@drawable/selector_switch_slider"
+                            />
+                </RelativeLayout>
+
+                <TextView android:id="@+id/textview1"
+                          android:layout_width="match_parent"
+                          android:layout_height="1dip"
+                          android:layout_marginLeft="10dip"
+                          android:layout_marginRight="10dip"
+                          android:background="#E6E6E6"/>
+
+                <RelativeLayout
+                        android:id="@+id/rl_switch_sound"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:background="@drawable/mm_listitem_grey_normal"
+                        android:padding="0dip">
+
+                    <com.myim.CustomTool.SwitchButton
+                            style="@style/item"
+                            android:id="@+id/switch_sound"
+                            android:text="语音"
+                            android:checked="true"
+                            app:withTextInterval="16dp"
+                            app:frameDrawable="@drawable/switch_frame"
+                            app:stateDrawable="@drawable/selector_switch_state"
+                            app:stateMaskDrawable="@drawable/switch_state_mask"
+                            app:sliderDrawable="@drawable/selector_switch_slider"
+                            />
+
+                </RelativeLayout>
+                <TextView android:id="@+id/textview2"
+                          android:layout_width="match_parent"
+                          android:layout_height="1dip"
+                          android:layout_marginLeft="10dip"
+                          android:layout_marginRight="10dip"
+                          android:background="#E6E6E6"/>
+
+                <RelativeLayout android:id="@+id/rl_switch_vibrate"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dip"
+                                android:background="@drawable/mm_listitem_grey_normal"
+                                android:padding="0dip">
+                    <com.myim.CustomTool.SwitchButton
+                            style="@style/item"
+                            android:id="@+id/switch_vibrate"
+                            android:text="震动"
+                            android:checked="true"
+                            app:withTextInterval="16dp"
+                            app:frameDrawable="@drawable/switch_frame"
+                            app:stateDrawable="@drawable/selector_switch_state"
+                            app:stateMaskDrawable="@drawable/switch_state_mask"
+                            app:sliderDrawable="@drawable/selector_switch_slider"
+                            />
+
+                </RelativeLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="10dip"
+                              android:layout_marginRight="10dip"
+                              android:layout_marginTop="10dip"
+                              android:orientation="vertical">
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="30dip"
+                              android:gravity="bottom|left"
+                              android:paddingLeft="10dip"
+                              android:text="聊天设置"
+                              android:textColor="@color/gray"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="1dip"
+                              android:background="@color/ghostwhite"/>
+                </LinearLayout>
+
+                <RelativeLayout android:id="@+id/rl_switch_speaker"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/mm_listitem_grey_normal"
+                                android:padding="10dip">
+
+                    <com.myim.CustomTool.SwitchButton
+                            style="@style/item"
+                            android:id="@+id/switch_pic"
+                            android:text="不接收图片"
+                            android:checked="true"
+                            app:withTextInterval="16dp"
+                            app:frameDrawable="@drawable/switch_frame"
+                            app:stateDrawable="@drawable/selector_switch_state"
+                            app:stateMaskDrawable="@drawable/switch_state_mask"
+                            app:sliderDrawable="@drawable/selector_switch_slider"
+                            />
+                </RelativeLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dip"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"
+                      android:background="@color/ghostwhite"/>
+                <LinearLayout android:id="@+id/ll_black_list"
+                              android:layout_width="match_parent"
+                              android:layout_height="50dip"
+                              android:background="@drawable/mm_listitem_grey_normal"
+                              android:padding="10dip">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center_vertical"
+                              android:paddingLeft="10dip"
+                              android:text="通讯录黑名单"
+                              android:textColor="@android:color/black"
+                              android:textSize="16sp"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dip"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"
+                      android:background="@color/ghostwhite"/>
+                <!--    <LinearLayout android:id="@+id/ll_diagnose"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="50dip"
+                                  android:background="@drawable/mm_listitem_grey_normal"
+                                  android:padding="10dip">
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center_vertical"
+                                  android:paddingLeft="10dip"
+                                  android:text="发送程序的运行日志给我"
+                                  android:textColor="@android:color/black"
+                                  android:textSize="14sp"/>
+                    </LinearLayout>-->
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+                <Button
+                        android:id="@+id/btn_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="12dp"
+                        android:background="@color/red"
+                        android:text="@string/button_logout"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
