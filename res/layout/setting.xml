@@ -38,7 +38,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:paddingLeft="10dip"
+                        android:paddingLeft="0dip"
                         android:text="我的信息"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
@@ -200,7 +200,8 @@
                       android:layout_marginLeft="10dp"
                       android:layout_marginRight="10dp"
                       android:background="@color/ghostwhite"/>
-                <RelativeLayout android:id="@+id/ll_black_list"
+                <RelativeLayout
+                              android:id="@+id/setting_version_term"
                               android:layout_width="match_parent"
                               android:layout_height="50dip"
                               android:background="@drawable/mm_listitem_grey_normal"

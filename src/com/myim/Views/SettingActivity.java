@@ -19,6 +19,7 @@ import com.myim.CustomTool.SwitchButton;
 import com.myim.CustomTool.setAudioController;
 import com.myim.NetService.Constant;
 import com.myim.NetService.JabberConnection;
+import junit.runner.Version;
 import org.jivesoftware.smack.SmackException;
 
 public class SettingActivity extends Activity {
@@ -33,6 +34,7 @@ public class SettingActivity extends Activity {
     private SharedPreferences mBaseSettings;
     private  int result;
     private MediaPlayer mediaPlayer;
+    private RelativeLayout version;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +46,7 @@ public class SettingActivity extends Activity {
         sbNotification = (SwitchButton) findViewById(R.id.switch_notification);
         sbSound = (SwitchButton) findViewById(R.id.switch_sound);
         sbVibrate = (SwitchButton) findViewById(R.id.switch_vibrate);
+        version=(RelativeLayout)findViewById(R.id.setting_version_term);
        // sbPic = (SwitchButton) findViewById(R.id.switch_pic);
         // 获取系统声音服务类
         audioMa = (AudioManager) getBaseContext().getSystemService(Context.AUDIO_SERVICE);
@@ -57,7 +60,7 @@ public class SettingActivity extends Activity {
 
         btn_logout.setOnClickListener(new OnClick());
         personal_msg.setOnClickListener(new OnClick());
-
+        version.setOnClickListener(new OnClick());
     }
 
 
@@ -192,6 +195,11 @@ public class SettingActivity extends Activity {
                     break;
                 case R.id.btn_logout:
                     exitAlert();
+                    break;
+                case R.id.setting_version_term:
+                    Intent intent1=new Intent();
+                    intent1.setClass(SettingActivity.this, VersionActivity.class);
+                    startActivity(intent1);
                     break;
                 default:
                     break;

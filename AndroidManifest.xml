@@ -60,7 +60,7 @@
                 android:configChanges="keyboardHidden|orientation"
                 android:windowSoftInputMode="stateHidden|adjustResize">
         </activity>
-
+        <activity android:name="com.myim.Views.VersionActivity"/>
 
         <activity android:name="com.myim.Views.ChatActivity"/>
         <activity android:name="com.myim.Views.MainActivity"/>
