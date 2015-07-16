@@ -92,26 +92,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f350396f-8cc9-46c1-bd28-a7c4cb1e066e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/version.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Game/DazzlingView.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Game/DazzlingView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/IU.apk" afterPath="$PROJECT_DIR$/out/production/IU/IU.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/IU.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/IU/IU.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$id.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$layout.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$menu.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$raw.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$string.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$style.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$styleable.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$1.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$2.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$3.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$4.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$5.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$OnClick.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$OnClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java" afterPath="$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/version.xml" afterPath="$PROJECT_DIR$/res/layout/version.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IU.iws" />
@@ -184,17 +170,17 @@
         <entry file="file://$PROJECT_DIR$/src/com/myim/Views/SettingActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="205" column="13" selection-start-line="205" selection-start-column="13" selection-end-line="205" selection-end-column="13" />
+              <caret line="203" column="24" selection-start-line="203" selection-start-column="24" selection-end-line="203" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VersionActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VersionActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6026012">
+              <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,51 +188,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/version.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-              <folding>
-                <element signature="e#1155#1172#0" expanded="true" />
-                <element signature="e#1349#1377#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <file leaf-file-name="ChatActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.68">
-              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="225" column="39" selection-start-line="225" selection-start-column="39" selection-end-line="225" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/register.xml">
+      <file leaf-file-name="version.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/version.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.4">
-              <caret line="319" column="53" selection-start-line="319" selection-start-column="53" selection-end-line="319" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setAudioController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/myim/CustomTool/setAudioController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="69" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
-              <folding />
+            <state vertical-scroll-proportion="-9.566667">
+              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+              <folding>
+                <element signature="e#1155#1172#0" expanded="true" />
+                <element signature="e#1349#1377#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -322,9 +285,9 @@
         <option value="$PROJECT_DIR$/res/layout/setting.xml" />
         <option value="$PROJECT_DIR$/src/com/myim/Views/SettingActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/version.xml" />
+        <option value="$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java" />
       </list>
     </option>
   </component>
@@ -723,7 +686,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="3093b01e" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="C8D15E7D73A7" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_4_API_14" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="D:/Git/bin/git.exe" />
@@ -1058,7 +1021,7 @@
       <workItem from="1436923492921" duration="9512000" />
       <workItem from="1436937064534" duration="1345000" />
       <workItem from="1436939518916" duration="12375000" />
-      <workItem from="1437022809581" duration="14093000" />
+      <workItem from="1437022809581" duration="15197000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1436939830653</created>
@@ -1120,11 +1083,17 @@
       <option name="project" value="LOCAL" />
       <updated>1437035991009</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="添加version界面和反馈">
+      <created>1437040577811</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1437040577811</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260401000" />
+    <option name="totallyTimeSpent" value="261505000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1241,20 +1210,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/shake.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.333333">
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-          <folding>
-            <element signature="e#426#451#0" expanded="false" />
-            <element signature="e#839#870#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/personal_msg.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1482,13 +1437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="212" column="33" selection-start-line="212" selection-start-column="33" selection-end-line="212" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myim/Beans/NotificationMsg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1616,24 +1564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/SettingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="205" column="13" selection-start-line="205" selection-start-column="13" selection-end-line="205" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/msg_all.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1646,15 +1576,49 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/version.xml">
-      <provider selected="true" editor-type-id="android-designer">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.566667">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
           <folding>
             <element signature="e#1155#1172#0" expanded="true" />
             <element signature="e#1349#1377#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38583815">
+          <caret line="142" column="33" selection-start-line="142" selection-start-column="33" selection-end-line="142" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/SettingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="203" column="24" selection-start-line="203" selection-start-column="24" selection-end-line="203" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="225" column="39" selection-start-line="225" selection-start-column="39" selection-end-line="225" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6026012">
+          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
