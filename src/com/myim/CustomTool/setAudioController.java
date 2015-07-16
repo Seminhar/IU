@@ -30,7 +30,6 @@ public class setAudioController extends Activity {
 //        //获取系统震动服务类
 //        vibrator = (Vibrator) getSystemService(Service.VIBRATOR_SERVICE);
 
-
     }
 
 
