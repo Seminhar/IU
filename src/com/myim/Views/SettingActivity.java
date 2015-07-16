@@ -44,7 +44,7 @@ public class SettingActivity extends Activity {
         sbNotification = (SwitchButton) findViewById(R.id.switch_notification);
         sbSound = (SwitchButton) findViewById(R.id.switch_sound);
         sbVibrate = (SwitchButton) findViewById(R.id.switch_vibrate);
-        sbPic = (SwitchButton) findViewById(R.id.switch_pic);
+       // sbPic = (SwitchButton) findViewById(R.id.switch_pic);
         // 获取系统声音服务类
         audioMa = (AudioManager) getBaseContext().getSystemService(Context.AUDIO_SERVICE);
         //获取系统震动服务类
@@ -104,7 +104,7 @@ public class SettingActivity extends Activity {
         sbNotification.setChecked(Constant.notification);
         sbSound.setChecked(Constant.sound);
         sbVibrate.setChecked(Constant.vibrate);
-        sbPic.setChecked(Constant.receivePic);
+
     }
 
     public void setSwitchListener() {
@@ -141,16 +141,6 @@ public class SettingActivity extends Activity {
                 editor.putBoolean("vibrate", isChecked);
                 editor.commit();
                 controller.Vibrate(vibrator, isChecked);
-            }
-        });
-        sbPic.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                Constant.receivePic=isChecked;
-                SharedPreferences.Editor editor=StartUpActivity.sharedPreferences.edit();
-                editor.putBoolean("receivePic", isChecked);
-                editor.commit();
-
             }
         });
     }

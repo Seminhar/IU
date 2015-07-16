@@ -31,8 +31,6 @@ public class setAudioController extends Activity {
 //        vibrator = (Vibrator) getSystemService(Service.VIBRATOR_SERVICE);
 
     }
-
-
     public void receivePic(boolean isChecked) {
 
 

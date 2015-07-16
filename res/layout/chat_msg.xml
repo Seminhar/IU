@@ -20,7 +20,6 @@
                 android:layout_height="36dip"
                 android:layout_marginLeft="8dip"
                 android:layout_marginTop="3dip"
-
                 android:textColor="@android:color/white"
                 android:textSize="35dp"
                 android:background="@drawable/personal_info_return"

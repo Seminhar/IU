@@ -43,6 +43,11 @@
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
                         android:typeface="serif"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentRight="true"
+                          android:background="@drawable/setting_term_enter"
+                        />
             </RelativeLayout>
             <!--            android:background="@drawable/selector_preference_complete"-->
 
@@ -75,7 +80,7 @@
                             style="@style/item"
                             android:id="@+id/switch_notification"
                             android:text="接受推送"
-                            android:checked="true"
+                            android:checked="false"
                             app:withTextInterval="16dp"
                             app:frameDrawable="@drawable/switch_frame"
                             app:stateDrawable="@drawable/selector_switch_state"
@@ -102,7 +107,7 @@
                             style="@style/item"
                             android:id="@+id/switch_sound"
                             android:text="语音"
-                            android:checked="true"
+                            android:checked="false"
                             app:withTextInterval="16dp"
                             app:frameDrawable="@drawable/switch_frame"
                             app:stateDrawable="@drawable/selector_switch_state"
@@ -127,7 +132,7 @@
                             style="@style/item"
                             android:id="@+id/switch_vibrate"
                             android:text="震动"
-                            android:checked="true"
+                            android:checked="false"
                             app:withTextInterval="16dp"
                             app:frameDrawable="@drawable/switch_frame"
                             app:stateDrawable="@drawable/selector_switch_state"
@@ -147,37 +152,32 @@
                               android:layout_height="30dip"
                               android:gravity="bottom|left"
                               android:paddingLeft="10dip"
-                              android:text="聊天设置"
+                              android:text="关于IU"
                               android:textColor="@color/gray"/>
                     <TextView android:layout_width="match_parent"
                               android:layout_height="1dip"
                               android:background="@color/ghostwhite"/>
                 </LinearLayout>
 
-                <RelativeLayout android:id="@+id/rl_switch_speaker"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/mm_listitem_grey_normal"
-                                android:padding="10dip">
+                <!--<RelativeLayout android:id="@+id/rl_switch_speaker"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:background="@drawable/mm_listitem_grey_normal"-->
+                                <!--android:padding="10dip">-->
 
-                    <com.myim.CustomTool.SwitchButton
-                            style="@style/item"
-                            android:id="@+id/switch_pic"
-                            android:text="不接收图片"
-                            android:checked="true"
-                            app:withTextInterval="16dp"
-                            app:frameDrawable="@drawable/switch_frame"
-                            app:stateDrawable="@drawable/selector_switch_state"
-                            app:stateMaskDrawable="@drawable/switch_state_mask"
-                            app:sliderDrawable="@drawable/selector_switch_slider"
-                            />
-                </RelativeLayout>
-                <View android:layout_width="match_parent"
-                      android:layout_height="1dip"
-                      android:layout_marginLeft="10dp"
-                      android:layout_marginRight="10dp"
-                      android:background="@color/ghostwhite"/>
-                <LinearLayout android:id="@+id/ll_black_list"
+                    <!--<com.myim.CustomTool.SwitchButton-->
+                            <!--style="@style/item"-->
+                            <!--android:id="@+id/switch_pic"-->
+                            <!--android:text="不接收图片"-->
+                            <!--android:checked="true"-->
+                            <!--app:withTextInterval="16dp"-->
+                            <!--app:frameDrawable="@drawable/switch_frame"-->
+                            <!--app:stateDrawable="@drawable/selector_switch_state"-->
+                            <!--app:stateMaskDrawable="@drawable/switch_state_mask"-->
+                            <!--app:sliderDrawable="@drawable/selector_switch_slider"-->
+                            <!--/>-->
+                <!--</RelativeLayout>-->
+                <RelativeLayout android:id="@+id/report_problem"
                               android:layout_width="match_parent"
                               android:layout_height="50dip"
                               android:background="@drawable/mm_listitem_grey_normal"
@@ -185,11 +185,41 @@
                     <TextView android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:layout_gravity="center_vertical"
-                              android:paddingLeft="10dip"
-                              android:text="通讯录黑名单"
+                              android:paddingLeft="0dip"
+                              android:text="反馈意见"
                               android:textColor="@android:color/black"
                               android:textSize="16sp"/>
-                </LinearLayout>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignParentRight="true"
+                              android:background="@drawable/setting_term_enter"
+                            />
+                </RelativeLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dip"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"
+                      android:background="@color/ghostwhite"/>
+                <RelativeLayout android:id="@+id/ll_black_list"
+                              android:layout_width="match_parent"
+                              android:layout_height="50dip"
+                              android:background="@drawable/mm_listitem_grey_normal"
+                              android:padding="10dip">
+                    <TextView
+                              android:id="@+id/version"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center_vertical"
+                              android:paddingLeft="0dip"
+                              android:text="版本"
+                              android:textColor="@android:color/black"
+                              android:textSize="16sp"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignParentRight="true"
+                              android:background="@drawable/setting_term_enter"
+                            />
+                </RelativeLayout>
                 <View android:layout_width="match_parent"
                       android:layout_height="1dip"
                       android:layout_marginLeft="10dp"

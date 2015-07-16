@@ -371,7 +371,6 @@ public class SwitchButton extends CompoundButton {
 
         this.tempMinSlideX = (-1 * (stateDrawable.getIntrinsicWidth() - frameBitmap.getIntrinsicWidth()));  //初始化X轴最小值
         setSlideX(isChecked() ? tempMinSlideX : tempMaxSlideX);  //根据选中状态初始化默认坐标
-
         requestLayout();
     }
 
