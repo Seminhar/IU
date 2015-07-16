@@ -28,6 +28,8 @@ public class StartUpActivity extends Activity {
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.startup);
+
+
         sharedPreferences = getSharedPreferences("imset", this.MODE_PRIVATE);
         if(sharedPreferences.getAll().size()==0) // First time
         {
