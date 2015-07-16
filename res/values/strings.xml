@@ -28,6 +28,8 @@
     <string name="male">男</string>
     <string name="female">女</string>
 
+    <string name="version_title_back">关于</string>
+
     <string name="loading_data">加载数据</string>
     <string name="registing">正在注册...</string>
 
