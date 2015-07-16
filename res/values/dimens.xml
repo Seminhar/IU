@@ -6,6 +6,7 @@
     <dimen name="contact_dialog_Size">40dp</dimen>
     <dimen name="Contact_AssortView_Size">30dp</dimen>
     <dimen name="top_title_bar_textSize">25sp</dimen>
+    <dimen name="top_title_bar_Size">25dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="login_textSize">25dp</dimen>

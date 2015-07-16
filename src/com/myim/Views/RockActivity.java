@@ -17,7 +17,7 @@ import com.example.IU.R;
 public class RockActivity extends Activity implements SensorEventListener {
     private SensorManager mSensorManager;
     private Vibrator mVibrator;
-    private final int ROCKPOWER = 15;// 这是传感器系数
+    private final int ROCKPOWER = 12;// 这是传感器系数
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +54,8 @@ public class RockActivity extends Activity implements SensorEventListener {
         // values[0]:X轴ᣬvalues[1]Y轴ᣬvalues[2]Z轴
         float[] values = event.values;
         if (sensorType == Sensor.TYPE_ACCELEROMETER) {
-            // 在 这个if里面写监听，写要摇一摇干么子，知道么？猪头
-            if ((Math.abs(values[0]) > ROCKPOWER || Math.abs(values[1]) > ROCKPOWER || Math.abs(values[2]) > ROCKPOWER)) {
+            // 在 这个if里面监听
+            if ((Math.abs(values[0])>ROCKPOWER || Math.abs(values[1])>ROCKPOWER || Math.abs(values[2])>ROCKPOWER)) {
 
                 mSensorManager.unregisterListener(this);
 

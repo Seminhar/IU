@@ -92,12 +92,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f350396f-8cc9-46c1-bd28-a7c4cb1e066e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/experience.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/guide1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/guide2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/guide3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/guide4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/mainbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/shake_img1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/user.png" />
+      <change type="DELETED" beforePath="E:\Seminhar\Android\IU\res\drawable-mdpi\guide1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Seminhar\Android\IU\res\drawable-mdpi\guide2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Seminhar\Android\IU\res\drawable-mdpi\guide3.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Seminhar\Android\IU\res\drawable-mdpi\guide4.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/AndyViewPagerActivity$1$1.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/AndyViewPagerActivity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/AndyViewPagerActivity$1.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/AndyViewPagerActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/AndyViewPagerActivity$2.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/AndyViewPagerActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/AndyViewPagerActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/AndyViewPagerActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Services/ChatService$1.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Services/ChatService$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Game/DazzlingView$1.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Game/DazzlingView$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Game/DazzlingView.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Game/DazzlingView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Operation/DeleteMsgListView.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Operation/DeleteMsgListView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/IU.apk" afterPath="$PROJECT_DIR$/out/production/IU/IU.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/IU.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/IU/IU.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java" afterPath="$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/LoginActivity$click.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/LoginActivity$click.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/LoginActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/MainActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Adapter/MsgListAdapter.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Adapter/MsgListAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/MsgListAllActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/MsgListAllActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/PersonalActivity$OnClick.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/PersonalActivity$OnClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/PersonalActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/PersonalActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/PositionActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/PositionActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$dimen.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$drawable.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$id.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$layout.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$menu.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$raw.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$string.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$style.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$styleable.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/RegisterActivity$OnClick.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/RegisterActivity$OnClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/RegisterActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/RegisterActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/RockActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/RockActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$OnClick.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$OnClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/CustomTool/setDialogImage.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/CustomTool/setDialogImage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/welcome.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/welcome.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/myim/Views/AndyViewPagerActivity.java" afterPath="$PROJECT_DIR$/src/com/myim/Views/AndyViewPagerActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/myim/Views/RockActivity.java" afterPath="$PROJECT_DIR$/src/com/myim/Views/RockActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/dimens.xml" afterPath="$PROJECT_DIR$/res/values/dimens.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/version.xml" afterPath="$PROJECT_DIR$/res/layout/version.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/guide_activity.xml" afterPath="$PROJECT_DIR$/res/layout/guide_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/personal_msg.xml" afterPath="$PROJECT_DIR$/res/layout/personal_msg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/register.xml" afterPath="$PROJECT_DIR$/res/layout/register.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/shake.xml" afterPath="$PROJECT_DIR$/res/layout/shake.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/startup.xml" afterPath="$PROJECT_DIR$/res/layout/startup.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IU.iws" />
@@ -127,15 +179,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="setting.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/setting.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="VersionActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.833333">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,70 +197,105 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+            <state vertical-scroll-proportion="-10.333333">
+              <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="msg_all.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/msg_all.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-34.566666">
-              <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/myim/Views/SettingActivity.java">
+      <file leaf-file-name="RockActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myim/Views/RockActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="203" column="24" selection-start-line="203" selection-start-column="24" selection-end-line="203" selection-end-column="24" />
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VersionActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java">
+      <file leaf-file-name="dimens.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6026012">
-              <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="74" column="65" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="personal_msg.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/personal_msg.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="409" column="47" selection-start-line="409" selection-start-column="47" selection-end-line="409" selection-end-column="47" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#4867#4885#0" expanded="true" />
+                <element signature="e#14536#14553#0" expanded="true" />
+                <element signature="e#15378#15395#0" expanded="true" />
+                <element signature="e#16177#16194#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
+      <file leaf-file-name="register.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/register.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="225" column="39" selection-start-line="225" selection-start-column="39" selection-end-line="225" selection-end-column="39" />
+            <state vertical-scroll-proportion="-10.566667">
+              <caret line="320" column="90" selection-start-line="320" selection-start-column="90" selection-end-line="320" selection-end-column="90" />
+              <folding>
+                <element signature="e#759#783#0" expanded="true" />
+                <element signature="e#2950#2968#0" expanded="true" />
+                <element signature="e#4847#4865#0" expanded="true" />
+                <element signature="e#6827#6847#0" expanded="true" />
+                <element signature="e#8749#8767#0" expanded="true" />
+                <element signature="e#10619#10634#0" expanded="true" />
+                <element signature="e#12508#12521#0" expanded="true" />
+                <element signature="e#13499#13513#0" expanded="true" />
+                <element signature="e#13874#13890#0" expanded="true" />
+                <element signature="e#14681#14695#0" expanded="true" />
+                <element signature="e#15425#15441#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/myim/Views/RegisterActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24724409">
+              <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/version.xml">
-          <provider editor-type-id="android-designer">
+      <file leaf-file-name="guide_activity.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/guide_activity.xml">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.566667">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-              <folding>
-                <element signature="e#1155#1172#0" expanded="true" />
-                <element signature="e#1349#1377#0" expanded="true" />
-              </folding>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="73" column="50" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -237,13 +323,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/myim/Game/game1tipsActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/myim/Game/DazzlingMenuActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/dazzling_tips.xml" />
         <option value="$PROJECT_DIR$/src/com/myim/Game/GameNumberActivity.java" />
         <option value="$PROJECT_DIR$/res/drawable/tab_selector_contacts.xml" />
-        <option value="$PROJECT_DIR$/res/layout/register.xml" />
-        <option value="$PROJECT_DIR$/src/com/myim/Views/AndyViewPagerActivity.java" />
         <option value="$PROJECT_DIR$/src/com/myim/Views/ContactActivity.java" />
         <option value="$PROJECT_DIR$/src/com/myim/Views/LoginActivity.java" />
         <option value="$PROJECT_DIR$/bin/AndroidManifest.xml" />
@@ -259,7 +341,6 @@
         <option value="$PROJECT_DIR$/src/com/myim/sort/HashList.java" />
         <option value="$PROJECT_DIR$/src/com/myim/Services/SubscribeService.java" />
         <option value="$PROJECT_DIR$/src/com/myim/Operation/Operation.java" />
-        <option value="$PROJECT_DIR$/res/layout/guide_activity.xml" />
         <option value="$PROJECT_DIR$/res/layout/login.xml" />
         <option value="$PROJECT_DIR$/res/layout/testTab.xml" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
@@ -267,10 +348,7 @@
         <option value="$PROJECT_DIR$/res/layout/tab_button_bottom.xml" />
         <option value="$PROJECT_DIR$/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/src/com/myim/Views/MainActivity.java" />
-        <option value="$PROJECT_DIR$/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/res/layout/shake.xml" />
         <option value="$PROJECT_DIR$/res/layout/msg_all_main.xml" />
-        <option value="$PROJECT_DIR$/res/layout/personal_msg.xml" />
         <option value="$PROJECT_DIR$/src/com/myim/CustomTool/settingController.java" />
         <option value="$PROJECT_DIR$/src/com/myim/Views/RemoteControlReceiver.java" />
         <option value="$PROJECT_DIR$/src/com/myim/Operation/RemoteControlReceiver.java" />
@@ -281,13 +359,21 @@
         <option value="$PROJECT_DIR$/src/com/myim/NetService/Constant.java" />
         <option value="$PROJECT_DIR$/src/com/myim/CustomTool/setAudioController.java" />
         <option value="$PROJECT_DIR$/src/com/myim/CustomTool/SwitchButton.java" />
-        <option value="$PROJECT_DIR$/res/layout/chat_msg.xml" />
         <option value="$PROJECT_DIR$/res/layout/setting.xml" />
         <option value="$PROJECT_DIR$/src/com/myim/Views/SettingActivity.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/version.xml" />
         <option value="$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/myim/Views/AndyViewPagerActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/guide_activity.xml" />
+        <option value="$PROJECT_DIR$/res/layout/startup.xml" />
+        <option value="$PROJECT_DIR$/res/layout/shake.xml" />
+        <option value="$PROJECT_DIR$/src/com/myim/Views/RockActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/layout/personal_msg.xml" />
+        <option value="$PROJECT_DIR$/res/layout/chat_msg.xml" />
+        <option value="$PROJECT_DIR$/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/res/layout/register.xml" />
       </list>
     </option>
   </component>
@@ -675,6 +761,78 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-xxhdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-xhdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-mdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -689,7 +847,7 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="C8D15E7D73A7" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_4_API_14" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="D:/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/IU/IU" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -703,11 +861,11 @@
       <recent name="com.myim.Views" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Seminhar\Android\IU\res\drawable-xhdpi" />
+      <recent name="E:\Seminhar\Android\IU\res\drawable-mdpi" />
+      <recent name="E:\Seminhar\Android\IU\res\drawable-xxhdpi" />
       <recent name="C:\Users\Administrator\Desktop\Last\IU\IU\res" />
       <recent name="C:\Users\Administrator\Desktop\Last\IU\IU\res\drawable-xxhdpi" />
-      <recent name="C:\Users\Administrator\Desktop\Last\IU\IU\res\drawable-xhdpi" />
-      <recent name="C:\Users\Administrator\Desktop\Last\IU\IU\res\drawable-mdpi" />
-      <recent name="C:\Users\Administrator\Desktop\Last\IU\IU\res\drawable-ldpi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Seminhar\Android\IU\res\drawable-mdpi" />
@@ -1021,7 +1179,7 @@
       <workItem from="1436923492921" duration="9512000" />
       <workItem from="1436937064534" duration="1345000" />
       <workItem from="1436939518916" duration="12375000" />
-      <workItem from="1437022809581" duration="15197000" />
+      <workItem from="1437022809581" duration="24024000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1436939830653</created>
@@ -1089,11 +1247,17 @@
       <option name="project" value="LOCAL" />
       <updated>1437040577811</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="添加version界面和反馈">
+      <created>1437041724826</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1437041724826</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261505000" />
+    <option name="totallyTimeSpent" value="270332000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1106,22 +1270,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14899328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6375839" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13825503" sideWeight="0.508596" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10469799" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19194631" sideWeight="0.495702" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43355703" sideWeight="0.495702" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.032214765" sideWeight="0.491404" order="7" side_tool="false" content_ui="tabs" x="27" y="475" width="1316" height="298" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10872483" sideWeight="0.491404" order="7" side_tool="false" content_ui="tabs" x="27" y="475" width="1316" height="298" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2170487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1132,7 +1296,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3409396" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1190,7 +1354,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="更新设置界面" />
     <MESSAGE value="添加version界面和反馈" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加version界面和反馈" />
+    <MESSAGE value="启动界面的修改和注册界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="启动界面的修改和注册界面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1210,105 +1375,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/personal_msg.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.17211704">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-          <folding>
-            <element signature="e#465#490#0" expanded="false" />
-            <element signature="e#1274#1305#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/CustomTool/setDialogImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0349162">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../android-sdk/sources/android-19/android/view/Choreographer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="599" column="0" selection-start-line="599" selection-start-column="0" selection-end-line="599" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../android-sdk/sources/android-19/com/android/internal/os/RuntimeInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46974063">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Operation/ImageBig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.36173186">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Game/material/UIModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.407822">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Game/data/RectArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.047486033">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Game/data/ColorData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.11731844">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../android-sdk/sources/android-19/android/content/SharedPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0656425">
-          <caret line="353" column="18" selection-start-line="353" selection-start-column="18" selection-end-line="353" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3912363">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Game/util/MixedConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Util/NearByUserUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.06534091">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Game/TipsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4318182">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myim/Game/GameNumberActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.303977">
@@ -1334,13 +1400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1120" column="0" selection-start-line="1120" selection-start-column="0" selection-end-line="1120" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../android-sdk/sources/android-19/android/app/ActivityThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="2434" column="0" selection-start-line="2434" selection-start-column="0" selection-end-line="2434" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1390,13 +1449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.9106145">
           <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/StartUpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5165289">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1496,33 +1548,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39739883">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6676301">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/register.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.4">
-          <caret line="319" column="53" selection-start-line="319" selection-start-column="53" selection-end-line="319" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/setting.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1553,17 +1578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/chat_msg.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/msg_all.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1571,28 +1585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-34.566666">
           <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/version.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.566667">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="e#1155#1172#0" expanded="true" />
-            <element signature="e#1349#1377#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38583815">
-          <caret line="142" column="33" selection-start-line="142" selection-start-column="33" selection-end-line="142" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1613,13 +1605,221 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/StartUpActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0345821">
+          <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/head1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/AndyViewPagerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/guide_activity.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="50" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/startup.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6891271">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#279#312#0" expanded="false" />
+            <element signature="e#349#384#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/RockActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/position.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/tab_button_bottom.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/version.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-xhdpi/setting_term_enter.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/shake.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="e#829#856#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6026012">
-          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/chat_msg.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.333333">
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/experience.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="65" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../android-sdk/sources/android-19/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3313783">
+          <caret line="1956" column="0" selection-start-line="1956" selection-start-column="0" selection-end-line="1956" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/personal_msg.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="409" column="47" selection-start-line="409" selection-start-column="47" selection-end-line="409" selection-end-column="47" />
+          <folding>
+            <element signature="e#4867#4885#0" expanded="true" />
+            <element signature="e#14536#14553#0" expanded="true" />
+            <element signature="e#15378#15395#0" expanded="true" />
+            <element signature="e#16177#16194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/user.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/register.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.566667">
+          <caret line="320" column="90" selection-start-line="320" selection-start-column="90" selection-end-line="320" selection-end-column="90" />
+          <folding>
+            <element signature="e#759#783#0" expanded="true" />
+            <element signature="e#2950#2968#0" expanded="true" />
+            <element signature="e#4847#4865#0" expanded="true" />
+            <element signature="e#6827#6847#0" expanded="true" />
+            <element signature="e#8749#8767#0" expanded="true" />
+            <element signature="e#10619#10634#0" expanded="true" />
+            <element signature="e#12508#12521#0" expanded="true" />
+            <element signature="e#13499#13513#0" expanded="true" />
+            <element signature="e#13874#13890#0" expanded="true" />
+            <element signature="e#14681#14695#0" expanded="true" />
+            <element signature="e#15425#15441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24724409">
+          <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

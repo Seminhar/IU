@@ -74,12 +74,14 @@
         <activity android:name="com.myim.Views.NearbyActivity"/>
         <activity android:name="com.myim.Views.SettingActivity"/>
         <activity android:name="com.myim.Views.AddressActivity"/>
-        <activity android:name="com.myim.Views.AndyViewPagerActivity"/>
+        <activity android:name="com.myim.Views.AndyViewPagerActivity"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity android:name="com.myim.Views.PersonalActivity"/>
         <activity android:name="com.myim.CustomTool.setAudioController"/>
 
 
-        <activity android:name="com.myim.Views.StartUpActivity">
+        <activity android:name="com.myim.Views.StartUpActivity"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

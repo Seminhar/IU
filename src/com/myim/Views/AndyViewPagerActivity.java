@@ -28,7 +28,7 @@ public class AndyViewPagerActivity extends Activity implements OnClickListener, 
     private ViewPager vp;
     private ViewPagerAdapter vpAdapter;
     private List<View> views;
-    private TextView button;
+    private ImageView button;
 
     //引导图片资源
     private static final int[] pics = {R.drawable.guide1,
@@ -48,12 +48,10 @@ public class AndyViewPagerActivity extends Activity implements OnClickListener, 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,//设置全屏
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);//设置全屏
 
         setContentView(R.layout.guide_activity);
-        button = (TextView) findViewById(R.id.button);
+        button = (ImageView) findViewById(R.id.button);
         views = new ArrayList<View>();
 
         LinearLayout.LayoutParams mParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT,
@@ -72,21 +70,12 @@ public class AndyViewPagerActivity extends Activity implements OnClickListener, 
         vp.setAdapter(vpAdapter);
         //绑定回调
         vp.setOnPageChangeListener(this);
-//        button = (Button) findViewById(R.id.button);
         //初始化底部小点
         initDots();
         button.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-//                Intent intent = new Intent();
-//                intent.setClass(AndyViewPagerActivity.this, MainActivity.class);
-//                Bundle bundle = new Bundle();
-//                bundle.putString("tab", "iMsg");
-//                intent.putExtras(bundle);
-//                startActivity(intent);
-//				AndyViewPagerActivity.this.startActivity(intent);
-                // If have username, automatically login
                 if (!Constant.isLogin && !Constant.PASS.equals("") && !Constant.USER_NAME.equals("")) {
                     // Login
                     new Thread(new Runnable() {
@@ -221,7 +210,7 @@ public class AndyViewPagerActivity extends Activity implements OnClickListener, 
             if (msg.what == 1) {
                 ContactPeer contactPeer = new ContactPeer(AndyViewPagerActivity.this);
                 contactPeer.loadDataFromDB();
-                contactPeer.contactList = new ContactTblHelper(AndyViewPagerActivity.this).loadFromServer();
+                ContactPeer.contactList = new ContactTblHelper(AndyViewPagerActivity.this).loadFromServer();
                 Intent intent = new Intent();
                 intent.setClass(AndyViewPagerActivity.this, MainActivity.class);
                 Bundle bundle = new Bundle();

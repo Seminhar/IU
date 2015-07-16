@@ -8,38 +8,41 @@
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/top_title_height"
+            android:layout_height="10dp"
+            android:weightSum="1"
             android:background="#ff102ce5"
-           >
+            android:layout_weight="5">
         <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:id="@+id/return1"
+
+
                 android:background="@drawable/personal_info_return"
                 android:layout_gravity="center"
-                android:paddingLeft="25dp"
-                android:layout_marginLeft="3dp">
+                android:layout_weight="0">
         </ImageButton>
         <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/head1"
 
                 android:textColor="#ffe5e5e5"
                 android:text="个人信息"
                 android:textIsSelectable="false"
-                android:textSize="@dimen/top_title_bar_textSize"
+                android:textSize="22dp"
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:layout_weight="1"
                 android:gravity="center"/>
         <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:id="@+id/set"
+
                 android:background="@drawable/personal_info_setting"
                 android:layout_gravity="center|right"
-                android:layout_weight="0" android:layout_marginRight="5dp">
+                android:layout_weight="0">
         </ImageButton>
     </LinearLayout>
     <LinearLayout
@@ -54,7 +57,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/ivProfilePic"
-                android:src="@drawable/profile"
+                android:src="@drawable/user"
                 />
 
     </LinearLayout>

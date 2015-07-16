@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-              android:orientation="vertical" android:background="#000000">
+              android:orientation="vertical" android:background="@drawable/mainbg">
 
     <RelativeLayout
             android:id="@+id/msg_top"
             android:layout_width="fill_parent"
-            android:layout_height="@dimen/top_title_height"
+            android:layout_height="48dp"
             android:background="@color/deepskyblue"
             android:layout_marginTop="1dp">
 
@@ -17,7 +17,7 @@
                 android:layout_height="wrap_content"
                 android:text="附近陌生人"
                 android:textColor="@color/white"
-                android:textSize="@dimen/top_title_bar_textSize"
+                android:textSize="@dimen/top_title_bar_Size"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"/>
 
@@ -32,11 +32,10 @@
                 android:layout_height="437dp"
                 android:id="@+id/imageView"
                 android:layout_gravity="center"
-                android:src="@drawable/shake_img"/>
+                android:src="@drawable/shake_img1"/>
         <TextView
                 android:layout_width="246dp"
                 android:layout_height="46dp"
-                android:background="#000000"
                 android:id="@+id/textView"
                 android:layout_gravity="center_horizontal|bottom"
                 android:text="想交朋友吗？摇一摇试试~"
