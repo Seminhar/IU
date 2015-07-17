@@ -40,7 +40,10 @@
                     android:textCursorDrawable="@null"
                     android:layout_below="@id/login_user_input"
                     android:singleLine="true"
-                    android:inputType="text" android:background="@drawable/border" android:padding="10dp"/>
+                    android:inputType="text"
+                    android:text="kkk"
+                    android:background="@drawable/border"
+                    android:padding="10dp"/>
 
             <!-- 密码 text -->
             <TextView
@@ -62,7 +65,9 @@
                     android:textCursorDrawable="@null"
                     android:singleLine="true"
                     android:inputType="textPassword"
-                    android:text="aaaaaa" android:background="@drawable/border" android:padding="10dp"/>
+                    android:text="aaaaaa"
+                    android:background="@drawable/border"
+                    android:padding="10dp"/>
 
 
         </RelativeLayout>
