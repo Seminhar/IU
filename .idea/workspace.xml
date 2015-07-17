@@ -251,7 +251,7 @@
       <file leaf-file-name="ImageBig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/myim/Operation/ImageBig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9175824">
+            <state vertical-scroll-proportion="0.654902">
               <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
@@ -1030,7 +1030,7 @@
       <workItem from="1436937064534" duration="1345000" />
       <workItem from="1436939518916" duration="12375000" />
       <workItem from="1437022809581" duration="26895000" />
-      <workItem from="1437115356946" duration="18508000" />
+      <workItem from="1437115356946" duration="18632000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1436939830653</created>
@@ -1146,11 +1146,17 @@
       <option name="project" value="LOCAL" />
       <updated>1437147680939</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="完善修改第一次合并">
+      <created>1437151673555</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1437151673555</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291711000" />
+    <option name="totallyTimeSpent" value="291835000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1177,7 +1183,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10469799" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1852349" sideWeight="0.495702" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7167785" sideWeight="0.48853868" order="7" side_tool="false" content_ui="tabs" x="27" y="475" width="1316" height="298" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.61879194" sideWeight="0.48853868" order="7" side_tool="false" content_ui="tabs" x="27" y="475" width="1316" height="298" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2170487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1250,7 +1256,8 @@
     <MESSAGE value="启动界面的修改和注册界面" />
     <MESSAGE value="修复启动界面图片挤压" />
     <MESSAGE value="添加登录和注册页的edtext的蓝色边框" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加登录和注册页的edtext的蓝色边框" />
+    <MESSAGE value="完善修改第一次合并" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善修改第一次合并" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1724,7 +1731,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myim/Operation/ImageBig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9175824">
+        <state vertical-scroll-proportion="0.654902">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
