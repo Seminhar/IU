@@ -2,8 +2,11 @@ package com.myim.model;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.os.AsyncTask;
 import android.os.Environment;
 import android.util.Log;
+import android.widget.ImageView;
+import com.example.IU.R;
 import com.myim.Beans.User;
 import com.myim.NetService.JabberConnection;
 import com.myim.SQLiteDB.ContactTblHelper;
@@ -24,29 +27,41 @@ import java.util.HashMap;
  */
 public class ContactPeer {
 
-    public static HashMap<String,User> contactList ;
+    public  HashMap<String,User> contactList ;
     private static   HashMap<String,SoftReference<Bitmap>> profilePicCache = new HashMap<String,SoftReference<Bitmap>>();
     public JabberConnection jc;
     private static Context context ;
     private final static String TAG ="ContactPeer";
-    public ContactPeer(Context context)
+    private static ContactPeer cp = null ;
+    private ContactPeer(Context context)
     {
         this.context = context;
         jc=JabberConnection.getInstance();
         contactList = new HashMap<String, User>();
 
     }
+    public static ContactPeer getInstance(Context context)
+    {
+        if(cp==null)
+        {
+            Log.i("Contact","Construct new COntactPeer");
+            cp = new ContactPeer(context);
+        }
+        return cp;
+    }
+
     public void loadDataFromDB ()
     {
         contactList = new ContactTblHelper(context).getContactMap();
     }
-    public static Bitmap getProfilePic(String username)
+
+
+    public  void getProfilePic(String username,ImageView imgV)
     {
         Bitmap bitmap = null ;
         SoftReference<Bitmap> bitmapSoft = profilePicCache.get(username);
         if(bitmapSoft==null)
         {
-
             String pathName;
             if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
 
@@ -64,23 +79,8 @@ public class ContactPeer {
                 profilePicCache.put(username,new SoftReference<Bitmap>(bitmap));
             }
             else {
-                Log.e(TAG,"Get pic from server");
-                VCard vCard = new VCard();
-                try {
-                    vCard.load(JabberConnection.getInstance().getConnection(), username + "@pc-pc");
-                    byte[] bytes = vCard.getAvatar();
-                    bitmap = BitmapUtil.getBitmapFromBytes(bytes);
-                    if (bitmap != null) {
-                        profilePicCache.put(username, new SoftReference<Bitmap>(bitmap));
-                        BitmapUtil.saveBitmapToLocal(pathName,bitmap);
-                    }
-                } catch (SmackException.NoResponseException e) {
-                    e.printStackTrace();
-                } catch (XMPPException.XMPPErrorException e) {
-                    e.printStackTrace();
-                } catch (SmackException.NotConnectedException e) {
-                    e.printStackTrace();
-                }
+                new ProfileImageLoader(imgV,pathName).execute(username);
+                return;
             }
         }
         else
@@ -103,24 +103,8 @@ public class ContactPeer {
                 }
                 else
                 {
-                    Log.e(TAG,"Get pic from server");
-                    VCard vCard = new VCard();
-                    try {
-                        vCard.load(JabberConnection.getInstance().getConnection(),username+"@pc-pc");
-                        byte[] bytes = vCard.getAvatar();
-                        bitmap = BitmapUtil.getBitmapFromBytes(bytes);
-                        if (bitmap!=null)
-                        {
-                            profilePicCache.put(username,new SoftReference<Bitmap>(bitmap));
-                            BitmapUtil.saveBitmapToLocal(pathName,bitmap);
-                        }
-                    } catch (SmackException.NoResponseException e) {
-                        e.printStackTrace();
-                    } catch (XMPPException.XMPPErrorException e) {
-                        e.printStackTrace();
-                    } catch (SmackException.NotConnectedException e) {
-                        e.printStackTrace();
-                    }
+                    new ProfileImageLoader(imgV,pathName).execute(username);
+                    return;
                 }
 
             }
@@ -131,8 +115,11 @@ public class ContactPeer {
             }
 
         }
+        if(bitmap!=null)
+        {
+            imgV.setImageBitmap(bitmap);
+        }
 
-        return bitmap;
     }
     public void relad()
     {
@@ -142,7 +129,7 @@ public class ContactPeer {
 //        {
 //            contactList.put(entry.getUser(),new User(entry.getUser()));
 //        }
-        //  new ContactTblHelper(this).loadFromServer();
+        //  new ContimactTblHelper(this).loadFromServer();
     }
     public void addFriend(String username,String nickname)
     {
@@ -186,4 +173,85 @@ public class ContactPeer {
         }
     }
 
+    public  void destroy()
+    {
+        contactList.clear();
+        profilePicCache.clear();
+        cp=null;
+
+    }
+    private Bitmap loadProfileImageWithVCard(String username)
+    {
+        Bitmap bitmap = null ;
+        Log.e(TAG,"Get pic from server");
+        VCard vCard = new VCard();
+        try {
+            vCard.load(JabberConnection.getInstance().getConnection(), username + "@pc-pc");
+            byte[] bytes = vCard.getAvatar();
+            bitmap = BitmapUtil.getBitmapFromBytes(bytes);
+
+        } catch (SmackException.NoResponseException e) {
+            e.printStackTrace();
+        } catch (XMPPException.XMPPErrorException e) {
+            e.printStackTrace();
+        } catch (SmackException.NotConnectedException e) {
+            e.printStackTrace();
+        }
+        return  bitmap;
+    }
+    //    Bitmap bitmap = null ;
+//    Log.e(TAG,"Get pic from server");
+//    VCard vCard = new VCard();
+//    try {
+//        vCard.load(JabberConnection.getInstance().getConnection(), username + "@pc-pc");
+//        byte[] bytes = vCard.getAvatar();
+//        bitmap = BitmapUtil.getBitmapFromBytes(bytes);
+//        if (bitmap != null) {
+//            profilePicCache.put(username, new SoftReference<Bitmap>(bitmap));
+//            BitmapUtil.saveBitmapToLocal(pathName,bitmap);
+//        }
+//    } catch (SmackException.NoResponseException e) {
+//        e.printStackTrace();
+//    } catch (XMPPException.XMPPErrorException e) {
+//        e.printStackTrace();
+//    } catch (SmackException.NotConnectedException e) {
+//        e.printStackTrace();
+//    }
+    class ProfileImageLoader extends AsyncTask<String ,Void,Bitmap>
+    {
+        private ImageView imgV;
+        private String pathName;
+        public ProfileImageLoader(ImageView imgV,String pathName) {
+            this.imgV = imgV ;
+
+            this.pathName = pathName;
+        }
+
+        @Override
+        protected Bitmap doInBackground(String... params) {
+            Log.i("Contact","sdf");
+            Bitmap bitmap = null ;
+            String username = params[0];
+            bitmap = loadProfileImageWithVCard(username);
+            if(bitmap!=null)
+            {
+                profilePicCache.put(username, new SoftReference<Bitmap>(bitmap));
+                BitmapUtil.saveBitmapToLocal(pathName, bitmap);
+            }
+            return bitmap;
+        }
+
+        @Override
+        protected void onPostExecute(Bitmap bitmap) {
+            super.onPostExecute(bitmap);
+            if (bitmap!=null)
+            {
+                imgV.setImageBitmap(bitmap);
+            }
+            else
+            {
+                imgV.setImageResource(R.drawable.profile);
+            }
+        }
+    }
 }

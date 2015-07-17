@@ -26,7 +26,7 @@ public class ContactActivity extends Activity {
     public static List<String> names;
     public static HashList<String, String> nameHashList;
     public static boolean needRefresh = false;
-
+    ContactPeer cp = ContactPeer.getInstance(this);
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -139,10 +139,10 @@ public class ContactActivity extends Activity {
 
     public void reloadList() {
         names = new ArrayList<String>();
-        if (ContactPeer.contactList != null) {
+        if (cp.contactList != null) {
             // Collection<User> users =   ContactPeer.contactList.values();
 
-            for (User user : ContactPeer.contactList.values()) {
+            for (User user : cp.contactList.values()) {
                 names.add(user.getNickName() + "@" + user.getUsername());
             }
         }

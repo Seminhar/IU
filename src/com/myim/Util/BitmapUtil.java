@@ -8,11 +8,35 @@ import android.graphics.drawable.Drawable;
 import android.util.Log;
 
 import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * Created by PC on 2015-05-08.
  */
 public class BitmapUtil {
+    public static Bitmap getBitmapFromUrl(String urls )
+    {
+        Bitmap bitmap  = null ;
+        InputStream is ;
+        try {
+            URL url = new URL(urls);
+            HttpURLConnection connection = null;
+            connection = (HttpURLConnection)url.openConnection();
+            is = new BufferedInputStream(connection.getInputStream());
+            bitmap = BitmapFactory.decodeStream(is);
+
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        return  bitmap;
+    }
     public static Bitmap getBitmapFromLocal(String path) {
         Bitmap bitmap = null;
         try {
@@ -84,8 +108,7 @@ public class BitmapUtil {
         if (f.exists()) {
             f.delete();
         }
-        //String dir = location + "/"+path;
-        //  new File(dir).mkdirs();//新建文件夹
+
         try {
             File parent = f.getParentFile();
             if (!parent.exists()) {

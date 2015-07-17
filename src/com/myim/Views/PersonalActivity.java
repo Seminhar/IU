@@ -35,7 +35,7 @@ public class PersonalActivity extends Activity {
     private TextView btnRemoveFri;
     private ImageButton personal_back_img = null;
     private ProgressDialog pdAddFri;
-
+    ContactPeer cp = ContactPeer.getInstance(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,6 +68,7 @@ public class PersonalActivity extends Activity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.return1:
+
                     PersonalActivity.this.finish();
                     break;
             }
@@ -87,19 +88,18 @@ public class PersonalActivity extends Activity {
         tvPhone.setText(user.getPhone());
         tvSex.setText(user.getSex());
         tvEmail.setText(user.getEmail());
-        Bitmap bit = ContactPeer.getProfilePic(user.getUsername());
-        if (bit != null) {
-            ivProfilePic.setImageBitmap(bit);
-        }
+        cp.getProfilePic(user.getUsername(),ivProfilePic);
+
     }
 
     private void initUI() {
         String username = user.getUsername();
+
         if (username.equals(Constant.USER_NAME)) {
             btnSendMsg.setVisibility(View.GONE);
             btnRemoveFri.setVisibility(View.GONE);
             btnAddFri.setVisibility(View.GONE);
-        } else if (ContactPeer.contactList.containsKey(username)) {
+        } else if (cp.contactList.containsKey(username)) {
             btnSendMsg.setVisibility(View.VISIBLE);
             btnRemoveFri.setVisibility(View.VISIBLE);
             btnAddFri.setVisibility(View.GONE);
@@ -187,7 +187,7 @@ public class PersonalActivity extends Activity {
                     JabberConnection.getInstance().sendMessage(user.getUsername(), m);
                     ContactActivity.needRefresh = true;
                     new ContactTblHelper(PersonalActivity.this).saveContact(user);
-                    ContactPeer.contactList.put(user.getUsername(), user);
+                    cp.contactList.put(user.getUsername(), user);
                     pdAddFri.dismiss();
                     Bundle bundle = new Bundle();
                     bundle.putString("username", user.getUsername());
@@ -206,7 +206,7 @@ public class PersonalActivity extends Activity {
             } else if (op == 2) {
                 boolean isUnFriSuccess = (boolean) msg.getData().get("isUnFriSuccess");
                 if (isUnFriSuccess) {
-                    ContactPeer.contactList.remove(user.getUsername());
+                    cp.contactList.remove(user.getUsername());
                     new ContactTblHelper(PersonalActivity.this).removeContact(user.getUsername());
                     new NotificationTblHelper(PersonalActivity.this).removeNotification(user.getUsername());
                     new ChatHistoryTblHelper(PersonalActivity.this).removeChatHistory(user.getUsername());

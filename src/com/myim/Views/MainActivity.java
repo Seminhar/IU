@@ -4,6 +4,7 @@ package com.myim.Views;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Window;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.RadioGroup;
@@ -81,5 +82,14 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
                 break;
 
         }
+    }
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+
+        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+            moveTaskToBack(true);
+            return true;
+        }
+        return super.dispatchKeyEvent(event);
     }
 }

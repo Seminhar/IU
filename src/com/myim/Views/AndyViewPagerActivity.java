@@ -30,7 +30,7 @@ public class AndyViewPagerActivity extends Activity implements OnClickListener, 
     private ViewPagerAdapter vpAdapter;
     private List<View> views;
     private ImageView button;
-
+    ContactPeer cp = ContactPeer.getInstance(this);
     //引导图片资源
     private static final int[] pics = {R.drawable.guide1,
             R.drawable.guide2, R.drawable.guide3,
@@ -209,9 +209,9 @@ public class AndyViewPagerActivity extends Activity implements OnClickListener, 
                 Toast.makeText(AndyViewPagerActivity.this, "登陆失败!请检查网络或账号", Toast.LENGTH_SHORT).show();
             }
             if (msg.what == 1) {
-                ContactPeer contactPeer = new ContactPeer(AndyViewPagerActivity.this);
-                contactPeer.loadDataFromDB();
-                ContactPeer.contactList = new ContactTblHelper(AndyViewPagerActivity.this).loadFromServer();
+                //ContactPeer contactPeer = new ContactPeer(AndyViewPagerActivity.this);
+                cp.loadDataFromDB();
+                cp.contactList = new ContactTblHelper(AndyViewPagerActivity.this).loadFromServer();
                 Intent intent = new Intent();
                 intent.setClass(AndyViewPagerActivity.this, MainActivity.class);
                 Bundle bundle = new Bundle();

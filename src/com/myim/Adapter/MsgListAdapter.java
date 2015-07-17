@@ -28,13 +28,14 @@ public class MsgListAdapter extends BaseAdapter {
      */
     private Context mContext = null;
     private List<NotificationMsg> data;
-
+    ContactPeer cp ;
     /**
      * @param
      */
     public MsgListAdapter(Context ctx, List<NotificationMsg> data) {
         mContext = ctx;
         this.data = data;
+        cp = ContactPeer.getInstance(ctx);
     }
 
     static class ViewHolder {
@@ -98,33 +99,25 @@ public class MsgListAdapter extends BaseAdapter {
             holder.tv_msg.setText(noti.getContent());
             holder.tv_time.setText(noti.getTime());
 
-            Bitmap profilePic = ContactPeer.getProfilePic(noti.getId());
-            if (profilePic!=null)
-                holder.iv_icon.setImageBitmap(profilePic);
-            else
-                holder.iv_icon.setImageResource(R.drawable.profile);
+            cp.getProfilePic(noti.getId(),holder.iv_icon);
+
+
         }
         else if(noti.getType() == NotificationMsg.CHAT_IMG)
         {
             holder.tv_title.setText(noti.getTitle());
             holder.tv_msg.setText("[图片]");
             holder.tv_time.setText(noti.getTime());
-            Bitmap profilePic = ContactPeer.getProfilePic(noti.getId());
-            if (profilePic!=null)
-                holder.iv_icon.setImageBitmap(profilePic);
-            else
-                holder.iv_icon.setImageResource(R.drawable.profile);
+           cp.getProfilePic(noti.getId(),holder.iv_icon);
+
         }
         else if(noti.getType() == NotificationMsg.CHAT_VO)
         {
             holder.tv_title.setText(noti.getTitle());
             holder.tv_msg.setText("[语音]");
             holder.tv_time.setText(noti.getTime());
-            Bitmap profilePic = ContactPeer.getProfilePic(noti.getId());
-            if (profilePic!=null)
-                holder.iv_icon.setImageBitmap(profilePic);
-            else
-                holder.iv_icon.setImageResource(R.drawable.profile);
+            cp.getProfilePic(noti.getId(),holder.iv_icon);
+
         }
 
 

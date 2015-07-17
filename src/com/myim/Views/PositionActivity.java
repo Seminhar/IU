@@ -216,7 +216,7 @@ public class PositionActivity extends Activity implements AMap.InfoWindowAdapter
                                     json = new JSONObject(result.toString());
                                     nearByUsers = new ArrayList<NearByUser>();
 
-                                    nearByUsers = NearByUserUtil.getNearByUserListFromJson(json);
+                                    nearByUsers = NearByUserUtil.getNearByUserListFromJson(json,PositionActivity.this);
                                     d.sendEmptyMessage(Constant.LOCATE_SUC);
                                     //showMarkers(nearByUsers);
 
@@ -269,6 +269,8 @@ public class PositionActivity extends Activity implements AMap.InfoWindowAdapter
         aMap.setMyLocationEnabled(true);// 设置为true表示显示定位层并可触发定位，false表示隐藏定位层并不可触发定位，默认是false
         // 设置定位的类型为定位模式 ，可以由定位、跟随或地图根据面向方向旋转几种
         //   aMap.setMyLocationType(AMap.LOCATION_TYPE_LOCATE);
+
+        aMap.moveCamera(CameraUpdateFactory.zoomTo(18));
 
     }
 

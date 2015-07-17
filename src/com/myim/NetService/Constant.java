@@ -7,6 +7,7 @@ import com.myim.Beans.User;
  */
 public class Constant {
     public static final String XMPP_HOST="172.20.190.1";
+    //public static final String XMPP_HOST="101.200.191.34";
     public static final int XMPP_PORT = 5222;
     public  static final String SERVICE_NAME="pc-pc";
     public static final String HTTP_HOST="http://"+XMPP_HOST+":9090/";
@@ -45,5 +46,5 @@ public class Constant {
 
 
     public static User user = null ;
-
+    public static String THUMBNAIL_DIR = "thumbnail" ;
 }

@@ -23,8 +23,10 @@ import com.myim.NetService.HttpFileUpload;
 import com.myim.Operation.ImageBig;
 import com.myim.Util.BitmapUtil;
 import android.os.Handler;
+import com.myim.Util.ImageLoader;
 import com.myim.Views.ChatActivity;
 import com.myim.model.ContactPeer;
+import org.jivesoftware.smack.Chat;
 
 
 import java.io.File;
@@ -33,15 +35,36 @@ import java.util.*;
 /**
  * Created by Administrator on 2015/4/4 0004.
  */
-public class MyChatAdapter extends BaseAdapter {
+public class MyChatAdapter extends BaseAdapter implements AbsListView.OnScrollListener {
+
 
     Context context = null;
-    ArrayList<ChatMessage> chatList = null;
-
-    public MyChatAdapter(Context context, ArrayList<ChatMessage> chatList) {
+    private ArrayList<ChatMessage> chatList = null;
+    private int start, end, visibleItemC;
+    private ImageLoader imageLoader;
+    public static ArrayList<ChatMessage> allContents;
+    private Boolean isFirst;
+    private Integer[] otherBubbles, meBubbles;
+    ContactPeer cp ;
+    public MyChatAdapter(Context context, ArrayList<ChatMessage> chatList, ListView listView) {
         super();
         this.context = context;
         this.chatList = chatList;
+        isFirst = true;
+        allContents = chatList;
+        listView.setOnScrollListener(this);
+        imageLoader = new ImageLoader(context, listView);
+        cp = ContactPeer.getInstance(context);
+        otherBubbles = new Integer[3];
+        meBubbles = new Integer[3];
+        otherBubbles[0] = new Integer(R.layout.chat_listiterm_other);
+        otherBubbles[1] = new Integer(R.layout.chat_listterm_image_other);
+        otherBubbles[2] = new Integer(R.layout.chat_voice_other);
+        meBubbles[0] = new Integer(R.layout.chat_listiterm_me);
+        meBubbles[1] = new Integer(R.layout.chat_listterm_image_me);
+        meBubbles[2] = new Integer(R.layout.chat_voice_me);
+
+
     }
 
     @Override
@@ -59,6 +82,36 @@ public class MyChatAdapter extends BaseAdapter {
         return position;
     }
 
+    @Override
+    public void onScrollStateChanged(AbsListView view, int scrollState) {
+
+        if (scrollState == SCROLL_STATE_IDLE) {
+            //加载
+            imageLoader.showImageWithRange(start, end, Constant.THUMBNAIL_DIR);
+        } else {
+            //停止加载
+            imageLoader.stopAllTasks();
+        }
+    }
+
+    @Override
+    public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+
+        start = firstVisibleItem;
+        end = firstVisibleItem + visibleItemCount;
+        visibleItemC = visibleItemCount;
+        if (isFirst && visibleItemCount > 0) {
+            isFirst = false;
+            imageLoader.showImageWithRange(start, end, Constant.THUMBNAIL_DIR);
+        }
+    }
+
+    public void refreshImageMsg() {
+        if (visibleItemC > 0) {
+
+            imageLoader.showImageWithRange(start, end, Constant.THUMBNAIL_DIR);
+        }
+    }
 
     class ViewHolder {
         public ImageView imageView = null;
@@ -72,87 +125,155 @@ public class MyChatAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         ChatMessage msg = chatList.get(position);
-        holder = new ViewHolder();
+        int msgType = msg.getType();
+        String msgMime = msg.getMime();
+        if (convertView == null) {
+            holder = new ViewHolder();
 
+            // 初始化 convertView
+            if (msgType == ChatMessage.RECEIVED_MSG) {
+                if (msgMime.equals(ChatMessage.TEXT_MIME)) {
+                    convertView = LayoutInflater.from(context).inflate(R.layout.chat_listiterm_other, null);
+                } else if (msgMime.equals(ChatMessage.IMG_MIME)) {
+                    convertView = LayoutInflater.from(context).inflate(R.layout.chat_listterm_image_other, null);
+                    holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
+                } else if (msgMime.equals(ChatMessage.VOICE_MIME)) {
+                    convertView = LayoutInflater.from(context).inflate(R.layout.chat_voice_other, null);
+                    holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
+                }
 
-        if (msg.getType() == ChatMessage.RECEIVED_MSG) {
-            if (msg.getMime().equals(ChatMessage.TEXT_MIME)) {
-                convertView = LayoutInflater.from(context).inflate(R.layout.chat_listiterm_other, null);
-            } else if (msg.getMime().equals(ChatMessage.IMG_MIME)) {
-                convertView = LayoutInflater.from(context).inflate(R.layout.chat_listterm_image_other, null);
-            } else if (msg.getMime().equals(ChatMessage.VOICE_MIME)) {
-                convertView = LayoutInflater.from(context).inflate(R.layout.chat_voice_other, null);
+            } else if (msgType == ChatMessage.SENT_MSG) {
+
+                if (msgMime.equals(ChatMessage.TEXT_MIME)) {
+                    convertView = LayoutInflater.from(context).inflate(R.layout.chat_listiterm_me, null);
+
+                } else if (msgMime.equals(ChatMessage.IMG_MIME)) {
+                    convertView = LayoutInflater.from(context).inflate(R.layout.chat_listterm_image_me, null);
+                    holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
+                } else if (msgMime.equals(ChatMessage.VOICE_MIME)) {
+                    convertView = LayoutInflater.from(context).inflate(R.layout.chat_voice_me, null);
+                    holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
+                }
             }
-        } else {
-
-            if (msg.getMime().equals(ChatMessage.TEXT_MIME)) {
-                convertView = LayoutInflater.from(context).inflate(R.layout.chat_listiterm_me, null);
-
-            } else if (msg.getMime().equals(ChatMessage.IMG_MIME)) {
-                convertView = LayoutInflater.from(context).inflate(R.layout.chat_listterm_image_me, null);
-            } else if (msg.getMime().equals(ChatMessage.VOICE_MIME)) {
-                convertView = LayoutInflater.from(context).inflate(R.layout.chat_voice_me, null);
-            }
-        }
-
-        holder.imageView = (ImageView) convertView.findViewById(R.id.chatList_image);
-        Bitmap bit   = ContactPeer.getProfilePic(msg.getFrom());
-        if (bit  != null ) {
-
-            holder.imageView.setImageBitmap(bit);
-        }
-        holder.imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-
-        if (msg.getMime().equals(ChatMessage.TEXT_MIME)) {
+            holder.imageView = (ImageView) convertView.findViewById(R.id.chatList_image);
             holder.textView = (TextView) convertView.findViewById(R.id.chatList_content);
-            holder.textView.setText(msg.getContent());
-            holder.textView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
 
+            convertView.setTag(holder);
+        } else {
+            holder = (ViewHolder) convertView.getTag();
+            if (!msgMime.equals(ChatMessage.TEXT_MIME) && holder.imgbtn == null) {
+                holder = new ViewHolder();
+                if (msgType == ChatMessage.RECEIVED_MSG) {
+                    if (msgMime.equals(ChatMessage.IMG_MIME)) {
+                        convertView = LayoutInflater.from(context).inflate(R.layout.chat_listterm_image_other, null);
+                        holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
+                    } else if (msgMime.equals(ChatMessage.VOICE_MIME)) {
+                        convertView = LayoutInflater.from(context).inflate(R.layout.chat_voice_other, null);
+                        holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
+                    }
+
+                } else {
+
+                    if (msgMime.equals(ChatMessage.IMG_MIME)) {
+                        convertView = LayoutInflater.from(context).inflate(R.layout.chat_listterm_image_me, null);
+                        holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
+                    } else if (msgMime.equals(ChatMessage.VOICE_MIME)) {
+                        convertView = LayoutInflater.from(context).inflate(R.layout.chat_voice_me, null);
+                        holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
+                    }
                 }
-            });
-        }
-        else if (msg.getMime().equals(ChatMessage.IMG_MIME)) {
-            holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
-            String subFolder = "thumbnail";
-            String fileName = new File(msg.getContent()).getName();
-            String location = Constant.LOCATION;
-            String pathName = location + "/" + subFolder + "/" + fileName;//文件存储路径
+                holder.imageView = (ImageView) convertView.findViewById(R.id.chatList_image);
+                // holder.textView = (TextView) convertView.findViewById(R.id.chatList_content);
+                convertView.setTag(holder);
+            } else if (msgMime.equals(ChatMessage.TEXT_MIME) && holder.textView == null) {
+                holder = new ViewHolder();
+                if (msg.getType() == ChatMessage.RECEIVED_MSG) {
 
-            File file = new File(pathName);
-            if (file.exists()) {
-                System.out.println("isexits");
-                Bitmap bitmap = BitmapUtil.getBitmapFromLocal(pathName);
-                if (bitmap != null && holder.imgbtn != null) {
+                    convertView = LayoutInflater.from(context).inflate(R.layout.chat_listiterm_other, null);
 
-                    holder.imgbtn.setImageBitmap(bitmap);
+                } else {
+
+                    convertView = LayoutInflater.from(context).inflate(R.layout.chat_listiterm_me, null);
                 }
-            } else {
-                if(Constant.receivePic) {
-                    Thread t = new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-                            // String url = HttpFileUpload.getThumbnailUrl(fileName);
-                            String filePath = HttpFileUpload.download(HttpFileUpload.getThumbnailUrl(fileName), subFolder, context);
-                            Message message = new Message();
-                            Bundle bundle = new Bundle();
-                            bundle.putString("filePath", filePath);
-                            bundle.putInt("type", 1);                       // 1= IMG
-                            message.setData(bundle);
-                            handler.sendMessage(message);
+                holder.imageView = (ImageView) convertView.findViewById(R.id.chatList_image);
+                holder.textView = (TextView) convertView.findViewById(R.id.chatList_content);
+                convertView.setTag(holder);
+            }
+
+            else {
+                if (msgType == ChatMessage.RECEIVED_MSG) {
+                    boolean flag = false;
+                    int id = convertView.getId();
+                    for (int i = 0; i < otherBubbles.length; i++) {
+                        if (otherBubbles[i] == id) {
+                            flag = true;
+                            break;
+                        }
+                    }
+                    if (!flag) {
+                        if (msgMime.equals(ChatMessage.TEXT_MIME)) {
+                            convertView = LayoutInflater.from(context).inflate(R.layout.chat_listiterm_other, null);
+                            holder.textView = (TextView) convertView.findViewById(R.id.chatList_content);
+                        } else if (msgMime.equals(ChatMessage.IMG_MIME)) {
+                            convertView = LayoutInflater.from(context).inflate(R.layout.chat_listterm_image_other, null);
+                            holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
+
+                        } else if (msgMime.equals(ChatMessage.VOICE_MIME)) {
+                            convertView = LayoutInflater.from(context).inflate(R.layout.chat_voice_other, null);
+                            holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
 
                         }
-                    });
-                    t.start();
+                        holder.imageView = (ImageView) convertView.findViewById(R.id.chatList_image);
+
+                    }
+                }
+                else if (msgType == ChatMessage.SENT_MSG) {
+                    boolean flag = false;
+                    int id = convertView.getId();
+                    for (int i = 0; i < meBubbles.length; i++) {
+                        if (meBubbles[i] == id) {
+                            flag = true;
+                            break;
+                        }
+                    }
+                    if (!flag) {
+                        if (msgMime.equals(ChatMessage.TEXT_MIME)) {
+                            convertView = LayoutInflater.from(context).inflate(R.layout.chat_listiterm_me, null);
+                            holder.textView = (TextView) convertView.findViewById(R.id.chatList_content);
+                        } else if (msgMime.equals(ChatMessage.IMG_MIME)) {
+                            convertView = LayoutInflater.from(context).inflate(R.layout.chat_listterm_image_me, null);
+                            holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
+
+                        } else if (msgMime.equals(ChatMessage.VOICE_MIME)) {
+                            convertView = LayoutInflater.from(context).inflate(R.layout.chat_voice_me, null);
+                            holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
+                        }
+                        holder.imageView = (ImageView) convertView.findViewById(R.id.chatList_image);
+
+                    }
                 }
             }
+
+
+
+        }
+
+        // holder.imageView = (ImageView) convertView.findViewById(R.id.chatList_image);
+        loadProfilePic(msg.getFrom(),holder.imageView);
+
+        if (msg.getMime().equals(ChatMessage.TEXT_MIME)) {
+            // holder.textView = (TextView) convertView.findViewById(R.id.chatList_content);
+            holder.textView.setText(msg.getContent());
+
+        } else if (msg.getMime().equals(ChatMessage.IMG_MIME)) {
+
+            String url = msg.getContent();
+            //显示缩略图
+
+
+            holder.imgbtn.setTag(url);
+            imageLoader.showImage(holder.imgbtn, url, Constant.THUMBNAIL_DIR);
+
             holder.imgbtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -162,9 +283,8 @@ public class MyChatAdapter extends BaseAdapter {
 
                 }
             });
-        }
-        else if (msg.getMime().equals(ChatMessage.VOICE_MIME)) {
-            holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
+        } else if (msg.getMime().equals(ChatMessage.VOICE_MIME)) {
+            //  holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
           /*  Resources resources = context.getResources();
             Drawable drawable = resources.getDrawable(R.drawable.chatto_voice_playing);
             Bitmap bmp= BitmapFactory.decodeResource(resources, R.drawable.chatto_voice_playing);
@@ -185,7 +305,7 @@ public class MyChatAdapter extends BaseAdapter {
                             Message message = new Message();
                             Bundle bundle = new Bundle();
                             bundle.putString("filePath", filePath);
-                            bundle.putInt("type", 2);
+                            bundle.putInt("type", 2);                          // 1= IMG
                             message.setData(bundle);
                             handler.sendMessage(message);
                         }
@@ -197,6 +317,7 @@ public class MyChatAdapter extends BaseAdapter {
         }
 
         convertView.setTag(holder);
+
         return convertView;
     }
 
@@ -209,7 +330,6 @@ public class MyChatAdapter extends BaseAdapter {
             if ((int) bundle.get("type") == 1) {   // 1 = IMG
                 String filePath = (String) bundle.get("filePath");
                 if (filePath != null) {
-
                     Bitmap bitmap = BitmapUtil.getBitmapFromLocal(filePath);
                     if (bitmap != null && holder.imgbtn != null)
                         holder.imgbtn.setImageBitmap(bitmap);
@@ -223,4 +343,10 @@ public class MyChatAdapter extends BaseAdapter {
             super.handleMessage(msg);
         }
     };
+
+    void loadProfilePic(String username,ImageView imgV)
+    {
+        cp.getProfilePic(username,imgV);
+
+    }
 }

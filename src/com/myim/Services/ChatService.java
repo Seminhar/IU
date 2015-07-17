@@ -43,7 +43,7 @@ public class ChatService extends Service {
     private final int NOTIFY_ID = 1;
     Context context = null;
     JabberConnection jc;
-
+    ContactPeer cp = ContactPeer.getInstance(this);
     @Override
     public void onCreate() {
         jc = JabberConnection.getInstance();
@@ -81,7 +81,7 @@ public class ChatService extends Service {
 
                     if (msg.getSubject() != null && msg.getSubject().equals("img")) {
                         Log.e(TAG, "Receive Image");
-                        User newUser = ContactPeer.contactList.get(User.getUsernameWithNoAt(msg.getFrom()));
+                        User newUser = cp.contactList.get(User.getUsernameWithNoAt(msg.getFrom()));
 
                         NotificationMsg noti = new NotificationMsg();
                         String from = User.getUsernameWithNoAt(msg.getFrom());
@@ -106,7 +106,7 @@ public class ChatService extends Service {
                         sendBroadcast(i);
                     } else if (msg.getSubject() != null && msg.getSubject().equals("vo")) {
                         Log.e(TAG, "Receive Voice");
-                        User newUser = ContactPeer.contactList.get(User.getUsernameWithNoAt(msg.getFrom()));
+                        User newUser = cp.contactList.get(User.getUsernameWithNoAt(msg.getFrom()));
                         NotificationMsg noti = new NotificationMsg();
                         // String from = User.getUsernameWithNoAt(msg.getFrom());
                         noti.setId(newUser.getUsername());
@@ -155,13 +155,13 @@ public class ChatService extends Service {
                             intent.setAction(Constant.ROSTER_ACTION);
                             intent.putExtra("roster", noti);
 
-                            ContactPeer.contactList.put(user, newUser);
+                            cp.contactList.put(user, newUser);
                             new ContactTblHelper(ChatService.this).saveContact(newUser);
                             ContactActivity.needRefresh = true;
                             sendBroadcast(intent);
                         } else {
                             Log.e("sad", "Receive Text msg");
-                            User newUser = ContactPeer.contactList.get(User.getUsernameWithNoAt(msg.getFrom()));
+                            User newUser = cp.contactList.get(User.getUsernameWithNoAt(msg.getFrom()));
 
                             NotificationMsg noti = new NotificationMsg();
                             //String from = User.getUsernameWithNoAt(msg.getFrom());

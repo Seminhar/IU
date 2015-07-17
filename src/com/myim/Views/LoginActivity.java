@@ -171,8 +171,8 @@ public class LoginActivity extends Activity {
                 Toast.makeText(LoginActivity.this, "登陆失败!请检查网络或账号", Toast.LENGTH_SHORT).show();
             }
             if (msg.what == 1) {
-                ContactPeer contactPeer = new ContactPeer(LoginActivity.this);
-                contactPeer.loadDataFromDB();
+                ContactPeer contactPeer = ContactPeer.getInstance(LoginActivity.this);
+                //contactPeer.loadDataFromDB();
                 contactPeer.contactList = new ContactTblHelper(LoginActivity.this).loadFromServer();
 //                // Contact Listener Service
 //                Intent subscribeService = new Intent(LoginActivity.this,SubscribeService.class);

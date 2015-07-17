@@ -1,6 +1,7 @@
 package com.myim.Util;
 
 
+import android.content.Context;
 import android.util.Log;
 import com.myim.Beans.NearByUser;
 import com.myim.Beans.User;
@@ -15,13 +16,14 @@ import java.util.ArrayList;
  */
 public class NearByUserUtil {
 
-    public static ArrayList<NearByUser> getNearByUserListFromJson(JSONObject json) {
+    public static ArrayList<NearByUser> getNearByUserListFromJson(JSONObject json,Context context) {
         ArrayList<NearByUser> list = new ArrayList<NearByUser>();
         for (int i = 0; i < json.length(); i++) {
             try {
 
                 String[] attr = json.get(i + "").toString().split(",");
-                if (!ContactPeer.contactList.containsKey(attr[0])) {
+                ContactPeer cp = ContactPeer.getInstance(context);
+                if (!cp.contactList.containsKey(attr[0])) {
                     User user = new User(attr[0]);
 
                     user.loadVCard();

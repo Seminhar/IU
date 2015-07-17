@@ -46,6 +46,8 @@ import com.myim.Operation.getPhotoFilenamePath;
 import com.myim.SQLiteDB.ChatHistoryTblHelper;
 import com.myim.SQLiteDB.NotificationTblHelper;
 import com.myim.Services.ChatService;
+import com.myim.Util.BitmapUtil;
+import com.myim.Util.SysStorageUtil;
 import com.myim.model.ContactPeer;
 import org.jivesoftware.smack.Chat;
 import org.jivesoftware.smack.ChatManager;
@@ -103,7 +105,7 @@ public class ChatActivity extends Activity {
     private String username = null;
     private String msgContent = null;
     private Button enjoyBtn = null;
-
+    ContactPeer cp = ContactPeer.getInstance(this);
     private static final int PHOTO_REQUEST_GALLERY = 1;
     private static final int PHOTO_REQUEST_TAKEPHOTO = 2;
     private static final int PHOTO_CLIP = 3;
@@ -156,11 +158,11 @@ public class ChatActivity extends Activity {
         bundle = this.getIntent().getExtras();
         username = bundle.getString("username");
         msgContent = bundle.getString("msgContent");
-        chat_contact_name.setText(ContactPeer.contactList.get(username).getNickName());
+        chat_contact_name.setText(cp.contactList.get(username).getNickName());
 
         chat = ChatManager.getInstanceFor(jc.getConnection()).createChat(username + "@" + Constant.SERVICE_NAME, null);
         initChatList();
-        adapter = new MyChatAdapter(this, chatList);
+        adapter = new MyChatAdapter(this, chatList,chatListView);
         chatListView.setAdapter(adapter);
         initReceiver();
     }
@@ -203,7 +205,7 @@ public class ChatActivity extends Activity {
             // Add to notification list
             NotificationMsg noti = new NotificationMsg();
             //String from = User.getUsernameWithNoAt(msg.getFrom());
-            String nickName = ContactPeer.contactList.get(username).getNickName();
+            String nickName = cp.contactList.get(username).getNickName();
             noti.setId(username);
             noti.setType(NotificationMsg.CHAT_MSG);
             noti.setStatus(NotificationMsg.UNREAD);
@@ -516,6 +518,16 @@ public class ChatActivity extends Activity {
                 if (url.equals("false")) {
                     return;
                 } else {
+                    //从服务器加载thumbnail
+                    Bitmap bitmap = BitmapUtil.getBitmapFromUrl(url);
+                    if(bitmap!=null)
+                    {
+                        String fileName = new File(url).getName();
+                        String location  = SysStorageUtil.getStorageLocation(context);
+                        String pathName = location + "/" + Constant.THUMBNAIL_DIR + "/" + fileName;//文件存储路径
+                        BitmapUtil.saveBitmapToLocal(pathName, bitmap);
+
+                    }
                     org.jivesoftware.smack.packet.Message msg = new org.jivesoftware.smack.packet.Message();
                     msg.setBody(url);
                     msg.setSubject("img");
@@ -527,7 +539,7 @@ public class ChatActivity extends Activity {
                         new ChatHistoryTblHelper(ChatActivity.this).saveChatHistory(chatMessage);
                         // Add to notificatioin list
                         NotificationMsg noti = new NotificationMsg();
-                        String nickName = ContactPeer.contactList.get(username).getNickName();
+                        String nickName = cp.contactList.get(username).getNickName();
                         noti.setId(username);
                         noti.setType(NotificationMsg.CHAT_IMG);
                         noti.setStatus(NotificationMsg.UNREAD);
@@ -575,7 +587,7 @@ public class ChatActivity extends Activity {
                         new ChatHistoryTblHelper(ChatActivity.this).saveChatHistory(chatMessage);
                         NotificationMsg noti = new NotificationMsg();
                         //String from = User.getUsernameWithNoAt(msg.getFrom());
-                        String nickName = ContactPeer.contactList.get(username).getNickName();
+                        String nickName = cp.contactList.get(username).getNickName();
                         noti.setId(username);
                         noti.setType(NotificationMsg.CHAT_VO);
                         noti.setStatus(NotificationMsg.UNREAD);

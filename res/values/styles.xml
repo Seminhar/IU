@@ -44,5 +44,7 @@
         <item name="android:drawablePadding">@dimen/tab_button_bottom_drawablePadding</item>
         <item name="android:singleLine">true</item>
     </style>
-
+    <style name="imageBigStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/imagebigback</item>
+    </style>
 </resources>

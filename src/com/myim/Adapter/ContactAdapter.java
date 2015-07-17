@@ -42,7 +42,7 @@ public class ContactAdapter extends BaseExpandableListAdapter {
     private Contact_AssortPinyinList assort = new Contact_AssortPinyinList();
 
     private Context context;
-
+    ContactPeer cp ;
     private LayoutInflater inflater;
     // 中文排序
     private LanguageComparator_CN cnSort = new LanguageComparator_CN();
@@ -56,7 +56,7 @@ public class ContactAdapter extends BaseExpandableListAdapter {
         if (strList == null) {
             strList = new ArrayList<String>();
         }
-
+         cp = ContactPeer.getInstance(context);
         long time = System.currentTimeMillis();
         // 排序
         sort();
@@ -114,11 +114,8 @@ public class ContactAdapter extends BaseExpandableListAdapter {
         String username = splitUsername[1];
 
 
-        Bitmap profilePic = ContactPeer.getProfilePic(username);
-
-        if (profilePic!=null)
-
-            holder.ivProfilePic.setImageBitmap(profilePic);
+        //加载头像 在另外线程
+        cp.getProfilePic(username,holder.ivProfilePic);
 
 
 
@@ -130,7 +127,7 @@ public class ContactAdapter extends BaseExpandableListAdapter {
                 //String username = adapter.getAssort().getHashList().getValueIndex(groupPosition, childPosition).split("@")[1];
                 Intent intent=new Intent();
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("username", ContactPeer.contactList.get(username));
+                bundle.putSerializable("username", cp.contactList.get(username));
                 intent.putExtras(bundle);
                 intent.setClass(context, PersonalActivity.class);
                 context.startActivity(intent);

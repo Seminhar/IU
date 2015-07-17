@@ -28,9 +28,9 @@ public class JabberConnection {
 
     private static JabberConnection jabberConnection;
     private MessageListener ml;
-
+    private JabberConnectionListener jabberConnectionListener ;
     private JabberConnection() {
-
+        jabberConnectionListener = new JabberConnectionListener();
     }
 
     public static JabberConnection getInstance() {
@@ -67,6 +67,7 @@ public class JabberConnection {
         }
         //  else if (xmppConnection!=null && xmppConnection.isConnected()==false) {
         else if(xmppConnection!=null && xmppConnection.isConnected()==false) {
+            xmppConnection.addConnectionListener(jabberConnectionListener );
             try {
 
                 xmppConnection.connect();
@@ -75,6 +76,7 @@ public class JabberConnection {
                 b = true;
             } catch (SmackException e) {
                 e.printStackTrace();
+
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (XMPPException e) {
@@ -293,7 +295,7 @@ public class JabberConnection {
 
     public void sendMessage(String to , Message msg )
     {
-        Chat newChart = ChatManager.getInstanceFor(xmppConnection).createChat(to+"@"+Constant.SERVICE_NAME, null);
+        Chat newChart = ChatManager.getInstanceFor(xmppConnection).createChat(to + "@" + Constant.SERVICE_NAME, null);
         try {
             newChart.sendMessage(msg);
             Log.i("","Send to:"+ newChart.getParticipant()+" "+msg);
@@ -301,10 +303,6 @@ public class JabberConnection {
             e.printStackTrace();
         }
     }
-
-
-
-
     public void initpacketall( )
     {
         PacketFilter filter = new PacketFilter() {
@@ -312,14 +310,10 @@ public class JabberConnection {
             public boolean accept(Packet packet) {
                 Log.i("sdf",packet.toXML().toString());
 
-                // Presence p = (Presence)packet ;
-
-
-
                 return true;
             }
         };
-        xmppConnection.addPacketListener(packetallListener,filter);
+        xmppConnection.addPacketListener(packetallListener, filter);
         Log.i("InitPacketall:","Success");
     }
     private  PacketListener packetallListener = new PacketListener() {
@@ -328,7 +322,53 @@ public class JabberConnection {
             Log.i("Packet al",packet.toXML().toString() );
         }
     };
+    class JabberConnectionListener implements ConnectionListener
+    {
 
+        @Override
+        public void connected(XMPPConnection xmppConnection) {
+            Log.i("xmppCon","connected");
+        }
+
+        @Override
+        public void authenticated(XMPPConnection xmppConnection) {
+            Log.i("xmppCon","authenticated");
+        }
+
+        @Override
+        public void connectionClosed() {
+            Log.i("xmppCon","Connection Closed");
+        }
+
+        @Override
+        public void connectionClosedOnError(Exception e) {
+            Log.i("xmppCon","Connection close on error: "+e.toString());
+        }
+
+        @Override
+        public void reconnectingIn(int i) {
+            Log.i("xmppCon","Reconnection in "+i);
+        }
+
+        @Override
+        public void reconnectionSuccessful() {
+            Log.i("xmppCon","Reconnection SuccessFul");
+        }
+
+        @Override
+        public void reconnectionFailed(Exception e) {
+            Log.i("xmppCon","Reconnection fail: "+e.toString());
+        }
+    }
+    public void destroy()
+    {
+        JabberConnection.jabberConnection =null;
+        try {
+            xmppConnection.disconnect();
+        } catch (SmackException.NotConnectedException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
 

@@ -19,7 +19,7 @@ import com.myim.CustomTool.SwitchButton;
 import com.myim.CustomTool.setAudioController;
 import com.myim.NetService.Constant;
 import com.myim.NetService.JabberConnection;
-import junit.runner.Version;
+import com.myim.model.ContactPeer;
 import org.jivesoftware.smack.SmackException;
 
 public class SettingActivity extends Activity {
@@ -35,6 +35,7 @@ public class SettingActivity extends Activity {
     private  int result;
     private MediaPlayer mediaPlayer;
     private RelativeLayout version;
+    ContactPeer cp = ContactPeer.getInstance(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -159,6 +160,7 @@ public class SettingActivity extends Activity {
 
                         try {
                             JabberConnection.getInstance().getConnection().disconnect();
+                            JabberConnection.getInstance().destroy();
                             Constant.isLogin = false;
                             Constant.USER_NAME = "";
                             Constant.PASS = "";
@@ -167,6 +169,7 @@ public class SettingActivity extends Activity {
                             editor.putString("p", Constant.PASS);
                             editor.commit();
                             startActivity(new Intent(SettingActivity.this, LoginActivity.class));
+                            cp.destroy();
                             SettingActivity.this.finish();
                         } catch (SmackException.NotConnectedException e) {
                             e.printStackTrace();

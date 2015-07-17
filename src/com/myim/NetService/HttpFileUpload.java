@@ -2,6 +2,8 @@ package com.myim.NetService;
 
 import android.content.Context;
 import android.os.Environment;
+import android.util.Log;
+import com.myim.Util.SysStorageUtil;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -27,26 +29,18 @@ public class HttpFileUpload {
         String path = subFolder;
         // String fileName = "3.png";
         String fileName = new File(urlString).getName();
-        if(fileName==null)
-            fileName="error";
+//        if(fileName==null)
+//            fileName="error";
 
         try {
 
-
-   String location ;
-            if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-                location = context.getExternalFilesDir(null).getAbsolutePath();
-            }
-            else
-                location = context.getCacheDir().getAbsolutePath();
-            //String SDCard = Environment.getExternalStorageDirectory() + "";
-            //   String SDCard = context.getFilesDir().getAbsolutePath();
+            String location  = SysStorageUtil.getStorageLocation(context);
             String pathName = location + "/" + path + "/" + fileName;//文件存储路径
 
             File file = new File(pathName);
 
             if (file.exists()) {
-                System.out.println("exits");
+                Log.i("", "file exist so exits");
                 rtn = pathName;
             } else {
                 OutputStream output = null;
