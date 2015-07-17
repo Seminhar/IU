@@ -8,8 +8,8 @@
                 android:id="@+id/viewpager"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_alignParentEnd="false"
-                android:layout_alignParentTop="true"/>
+
+                />
 
 
         <LinearLayout
@@ -19,7 +19,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:paddingRight="30dp" android:layout_marginBottom="45dip">
+                android:paddingRight="30dip"
+                android:layout_marginBottom="45dip">
 
                 <ImageView
                         android:layout_width="wrap_content"

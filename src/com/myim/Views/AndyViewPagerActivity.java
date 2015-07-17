@@ -13,6 +13,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.*;
 import com.example.IU.R;
+import com.myim.Adapter.ViewPagerAdapter;
 import com.myim.NetService.Constant;
 import com.myim.NetService.JabberConnection;
 import com.myim.SQLiteDB.ContactTblHelper;
@@ -54,8 +55,8 @@ public class AndyViewPagerActivity extends Activity implements OnClickListener, 
         button = (ImageView) findViewById(R.id.button);
         views = new ArrayList<View>();
 
-        LinearLayout.LayoutParams mParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT,
-                LinearLayout.LayoutParams.FILL_PARENT);
+        LinearLayout.LayoutParams mParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.MATCH_PARENT);
 
         //初始化引导图片列表
         for (int pic : pics) {
