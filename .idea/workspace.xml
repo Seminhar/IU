@@ -99,8 +99,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f350396f-8cc9-46c1-bd28-a7c4cb1e066e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/border.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/button_style.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/AndyViewPagerActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/AndyViewPagerActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Services/ChatService$1.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Services/ChatService$1.class" />
@@ -119,12 +117,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$OnClick.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$OnClick.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/CustomTool/setDialogImage.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/CustomTool/setDialogImage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/chat_msg.xml" afterPath="$PROJECT_DIR$/res/layout/chat_msg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/login.xml" afterPath="$PROJECT_DIR$/res/layout/login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/register.xml" afterPath="$PROJECT_DIR$/res/layout/register.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/setting.xml" afterPath="$PROJECT_DIR$/res/layout/setting.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/version.xml" afterPath="$PROJECT_DIR$/res/layout/version.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IU.iws" />
@@ -1084,7 +1076,7 @@
       <workItem from="1436937064534" duration="1345000" />
       <workItem from="1436939518916" duration="12375000" />
       <workItem from="1437022809581" duration="26895000" />
-      <workItem from="1437115356946" duration="6864000" />
+      <workItem from="1437115356946" duration="6935000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1436939830653</created>
@@ -1182,11 +1174,17 @@
       <option name="project" value="LOCAL" />
       <updated>1437116504286</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="添加登录和注册页的edtext的蓝色边框">
+      <created>1437139049861</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1437139049861</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280067000" />
+    <option name="totallyTimeSpent" value="280138000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1285,7 +1283,8 @@
     <MESSAGE value="添加version界面和反馈" />
     <MESSAGE value="启动界面的修改和注册界面" />
     <MESSAGE value="修复启动界面图片挤压" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复启动界面图片挤压" />
+    <MESSAGE value="添加登录和注册页的edtext的蓝色边框" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加登录和注册页的edtext的蓝色边框" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
