@@ -40,8 +40,7 @@
                     android:textCursorDrawable="@null"
                     android:layout_below="@id/login_user_input"
                     android:singleLine="true"
-                    android:inputType="text"
-                    android:text="kkk"/>
+                    android:inputType="text" android:background="@drawable/border" android:padding="10dp"/>
 
             <!-- 密码 text -->
             <TextView
@@ -63,27 +62,27 @@
                     android:textCursorDrawable="@null"
                     android:singleLine="true"
                     android:inputType="textPassword"
-                    android:text="a"/>
+                    android:text="aaaaaa" android:background="@drawable/border" android:padding="10dp"/>
 
 
         </RelativeLayout>
 
-<RelativeLayout android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp">
-    <Button
-            android:id="@+id/btn_login"
-            android:layout_width="fill_parent"
-            android:layout_height="48dp"
-            android:text="@string/login"
-            android:textSize="@dimen/login_textSize"
-            android:background="@color/deepskyblue"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:textColor="@color/white"
-            android:layout_gravity="center_horizontal"/>
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp">
+            <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/login"
+                    android:textSize="@dimen/login_textSize"
+                    android:background="@color/deepskyblue"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"/>
 
-</RelativeLayout>
+        </RelativeLayout>
 
         <RelativeLayout
                 android:layout_width="fill_parent"
@@ -104,7 +103,7 @@
                        android:layout_marginBottom="25dp"
                        android:textColor="#888"
                        android:textColorLink="#FF0066CC"
-                      />
+                    />
 
             <ImageView android:src="@drawable/logo"
                        android:layout_width="wrap_content"

@@ -132,7 +132,7 @@
                             style="@style/item"
                             android:id="@+id/switch_vibrate"
                             android:text="震动"
-                            android:checked="true"
+                            android:checked="false"
                             app:withTextInterval="16dp"
                             app:frameDrawable="@drawable/switch_frame"
                             app:stateDrawable="@drawable/selector_switch_state"

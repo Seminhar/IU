@@ -3,8 +3,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:orientation="vertical"
-                android:id="@+id/register"
-                android:background="@drawable/register_bg">
+                android:id="@+id/register" android:background="@drawable/register_bg">
 
     <RelativeLayout
             android:id="@+id/top"
@@ -36,8 +35,7 @@
             android:layout_marginLeft="20dip"
             android:layout_marginRight="20dip"
             android:layout_marginTop="5dip"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="5dip">
+            android:layout_alignParentBottom="true" android:layout_marginBottom="5dip">
         <ScrollView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -57,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:focusable="true"
                         android:focusableInTouchMode="true"
-                        android:padding="5.0dip"
+                        android:padding="5dp"
                         android:layout_marginTop="100dp">
 
                     <TextView
@@ -69,22 +67,20 @@
                             android:layout_marginLeft="10.0dip"
                             android:text="@string/username"
                             android:textColor="@color/black"
-                            android:textSize="14.0sp"/>
+                            android:textSize="14sp" android:layout_marginRight="3.0dip"/>
 
                     <EditText
                             android:id="@+id/input_userid"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="5.0dip"
                             android:textColor="@color/black"
                             android:textCursorDrawable="@null"
                             android:layout_toRightOf="@id/userName"
-                            android:background="@drawable/input2_bg"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
+                            android:background="@drawable/border"
                             android:maxLines="1"
-                            android:layout_marginRight="30dip"/>
+                            android:layout_marginRight="30dip" android:padding="6dp"/>
                 </RelativeLayout>
                 <!--密码-->
                 <RelativeLayout
@@ -92,7 +88,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/row1"
-                        android:padding="5.0dip"
+                        android:padding="5dp"
                         android:layout_marginTop="5dp">
 
                     <TextView
@@ -105,11 +101,11 @@
                             android:layout_marginRight="3.0dip"
                             android:text="@string/password"
                             android:textColor="@color/black"
-                            android:textSize="14.0sp"/>
+                            android:textSize="14sp"/>
 
                     <EditText
                             android:id="@+id/input_pwd"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="5.0dip"
@@ -117,10 +113,10 @@
                             android:textColor="@color/black"
                             android:textCursorDrawable="@null"
                             android:layout_toRightOf="@id/pwd"
-                            android:background="@drawable/input2_bg"
+                            android:background="@drawable/border"
                             android:inputType="textPassword"
                             android:password="true"
-                            android:padding="5.0dp"
+                            android:padding="6dp"
                             android:maxLines="1"
                             />
                 </RelativeLayout>
@@ -130,7 +126,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/row2"
-                        android:padding="5.0dip"
+                        android:padding="5dp"
                         android:layout_marginTop="5dp">
 
                     <TextView
@@ -143,11 +139,11 @@
                             android:layout_marginRight="3.0dip"
                             android:text="@string/repassword"
                             android:textColor="@color/black"
-                            android:textSize="14.0sp"/>
+                            android:textSize="14sp"/>
 
                     <EditText
                             android:id="@+id/input_repwd"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="5.0dip"
@@ -155,8 +151,8 @@
                             android:layout_toRightOf="@id/repwd"
                             android:textColor="@color/black"
                             android:textCursorDrawable="@null"
-                            android:background="@drawable/input2_bg"
-                            android:padding="5.0dip"
+                            android:background="@drawable/border"
+                            android:padding="6dp"
                             android:password="true"
                             android:maxLines="1"
                             />
@@ -168,7 +164,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/row3"
-                        android:padding="5.0dip"
+                        android:padding="5dp"
                         android:layout_marginTop="5dp">
 
                     <TextView
@@ -181,11 +177,11 @@
                             android:layout_marginRight="3.0dip"
                             android:text="@string/nickname"
                             android:textColor="@color/black"
-                            android:textSize="14.0sp"/>
+                            android:textSize="14sp"/>
 
                     <EditText
                             android:id="@+id/input_nickname"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="5.0dip"
@@ -193,8 +189,8 @@
                             android:layout_toRightOf="@id/name"
                             android:textColor="@color/black"
                             android:textCursorDrawable="@null"
-                            android:background="@drawable/input2_bg"
-                            android:padding="5.0dip"
+                            android:background="@drawable/border"
+                            android:padding="6dp"
                             android:maxLines="1"
                             />
                 </RelativeLayout>
@@ -204,7 +200,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/row4"
-                        android:padding="5.0dip"
+                        android:padding="5dp"
                         android:layout_marginTop="5dp">
 
                     <TextView
@@ -217,11 +213,11 @@
                             android:layout_marginRight="3.0dip"
                             android:text="@string/email"
                             android:textColor="@color/black"
-                            android:textSize="14.0sp"/>
+                            android:textSize="14sp"/>
 
                     <EditText
                             android:id="@+id/input_email"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="5.0dip"
@@ -229,10 +225,10 @@
                             android:layout_toRightOf="@id/email"
                             android:textColor="@color/black"
                             android:textCursorDrawable="@null"
-                            android:background="@drawable/input2_bg"
-                            android:padding="5.0dip"
+                            android:background="@drawable/border"
+                            android:padding="6dp"
                             android:maxLines="1"
-                            />
+                            android:layout_alignParentEnd="false"/>
                 </RelativeLayout>
                 /**
                 性别选择
@@ -240,8 +236,9 @@
                 <RelativeLayout android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/row6"
-                                android:padding="5.0dip"
-                                android:layout_below="@+id/row5" android:layout_alignParentLeft="true">
+                                android:layout_below="@+id/row5"
+                                android:padding="5.0dp"
+                                android:layout_marginTop="5dp">
 
                     <TextView
                             android:id="@+id/sex"
@@ -253,7 +250,7 @@
                             android:layout_marginRight="3.0dip"
                             android:text="@string/sex"
                             android:textColor="@color/black"
-                            android:textSize="14.0sp"/>
+                            android:textSize="14sp"/>
 
                     <RadioGroup
                             android:id="@+id/radioSex"
@@ -272,63 +269,19 @@
                                 android:id="@+id/male"
                                 android:text="@string/male"
                                 android:textColor="@color/black"
-
-                                />
+                                android:padding="5dp"/>
                         <RadioButton android:layout_width="wrap_content"
                                      android:layout_height="wrap_content"
                                      android:id="@+id/female"
                                      android:text="@string/female"
-                                     android:textColor="@color/black"/>
+                                     android:textColor="@color/black"
+                                     android:padding="5dp"/>
                     </RadioGroup>
                 </RelativeLayout>
-                    <RelativeLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/row7"
-                            android:layout_below="@+id/sex"
-                            android:padding="5.0dip"
-                            android:layout_marginTop="420dp">
-                        <Button
-                                android:id="@+id/ok"
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/sure"
-                                android:textColor="@android:color/white"
-                                android:textStyle="bold"
-                                android:layout_centerVertical="true"
-                                android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="5dip"
-                                android:background="@color/deepskyblue"
-                                android:textSize="18dp"/>
 
-                        <Button
-                                android:id="@+id/cancel"
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/cancel"
-                                android:textColor="@android:color/white"
-                                android:textStyle="bold"
-                                android:layout_alignTop="@+id/ok" android:layout_alignParentRight="true"
-                                android:layout_marginRight="6dip" android:background="@color/deepskyblue"
-                                android:textSize="18dp"/>
-
-                    </RelativeLayout>
-                <ImageView
-                        android:id="@+id/hendView"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:src="@drawable/user"
-                        android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
-            </RelativeLayout>
-            </ScrollView>
                 /**
                 *头像
                 */
-            <ScrollView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:scrollbars="none"
-                    android:id="@+id/scrollView1">
                 <LinearLayout
                         android:id="@+id/linearLayout2"
                         android:orientation="vertical"
@@ -338,7 +291,49 @@
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true">
 
+                    <ImageView
+                            android:id="@+id/hendView"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/user"
+                            android:layout_marginTop="5dip"/>
                 </LinearLayout>
-            </ScrollView>
             </RelativeLayout>
+        </ScrollView>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/button"
+                android:layout_below="@+id/scrollView"
+                android:layout_marginTop="5dip">
+            <Button
+                    android:id="@+id/ok"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:text="@string/sure"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/button_style"
+                    android:textSize="15dp"/>
+
+            <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:text="@string/cancel"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_alignTop="@+id/ok"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="6dip"
+                    android:background="@drawable/button_style"
+                    android:textSize="15dp"/>
+
         </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
