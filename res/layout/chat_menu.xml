@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TableLayout
+                 android:id="@+id/table1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:stretchColumns="*"
+                 android:layout_alignParentBottom="true"
+                 android:gravity="center_horizontal"
+                 android:background="#ffcce0e5"
+                 android:orientation="vertical">
+            <TableRow android:id="@+id/row1"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="5dp"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content" android:gravity="fill_horizontal">
+                <ImageButton android:layout_width="60dip"
+                             android:layout_height="100dip"
+                             android:id="@+id/button1"
+                             android:layout_margin="2dp"
+                             android:src="@drawable/send_picture"
+                             android:background="#00000000">
+                </ImageButton>
+                <ImageButton android:layout_width="60dip"
+                             android:layout_height="100dip"
+                             android:id="@+id/button2"
+                             android:layout_margin="2dp"
+                             android:src="@drawable/photographic"
+                             android:background="#00000000">
+                </ImageButton>
+                <ImageButton android:layout_width="60dp"
+                             android:layout_height="100dp"
+                             android:id="@+id/button3"
+                             android:layout_margin="2dp"
+                             android:src="@drawable/map"
+                             android:background="#00000000">
+                </ImageButton>
+                <ImageButton android:layout_width="60dp"
+                             android:layout_height="100dp"
+                             android:id="@+id/button4"
+                             android:layout_margin="2dp"
+                             android:src="@drawable/meet"
+                             android:background="#00000000">
+                </ImageButton>
+            </TableRow>
+        </TableLayout>
+</RelativeLayout>
