@@ -8,6 +8,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.*;
 
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -104,7 +105,8 @@ public class ChatActivity extends Activity {
     private MsgListener msgListener = new MsgListener();
     private String username = null;
     private String msgContent = null;
-    private Button enjoyBtn = null;
+    private Button chat_msg_enjoyBtn = null;
+    private ImageButton chat_menu=null;
     ContactPeer cp = ContactPeer.getInstance(this);
     private static final int PHOTO_REQUEST_GALLERY = 1;
     private static final int PHOTO_REQUEST_TAKEPHOTO = 2;
@@ -138,7 +140,8 @@ public class ChatActivity extends Activity {
         chat_contact_name = (TextView) findViewById(R.id.chat_contact_name);
         chat_msg_button = (TextView) findViewById(R.id.chat_msg_button);
         chat_bottom_add = (ImageButton) findViewById(R.id.chat_bottom_add);
-        enjoyBtn = (Button) findViewById(R.id.chat_msg_enjoyBtn);
+        chat_menu=(ImageButton) findViewById(R.id.chat_bottom_menu);
+        chat_msg_enjoyBtn= (Button) findViewById(R.id.chat_msg_enjoyBtn);
         /**
          *录音按钮及相关布局
          */
@@ -152,7 +155,8 @@ public class ChatActivity extends Activity {
         chat_msg_button.setOnClickListener(new OnClick());
         chatSendButton.setOnClickListener(new OnClick());
         record_btn.setOnTouchListener(new OnTouch());
-        enjoyBtn.setOnClickListener(new OnClick());
+        chat_msg_enjoyBtn.setOnClickListener(new OnClick());
+        chat_menu.setOnClickListener(new OnClick());
 
 
         bundle = this.getIntent().getExtras();
@@ -165,6 +169,11 @@ public class ChatActivity extends Activity {
         adapter = new MyChatAdapter(this, chatList,chatListView);
         chatListView.setAdapter(adapter);
         initReceiver();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration config) {
+        super.onConfigurationChanged(config);
     }
 
     @Override
@@ -287,7 +296,6 @@ public class ChatActivity extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-
                         Intent intent = new Intent(Intent.ACTION_PICK, null);
                         intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
                         startActivityForResult(intent, PHOTO_REQUEST_GALLERY);
@@ -316,7 +324,6 @@ public class ChatActivity extends Activity {
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
                                             dialog.dismiss();
-
                                             photoClip(Uri.fromFile(photo));
                                         }
                                     })
@@ -434,10 +441,16 @@ public class ChatActivity extends Activity {
                 case R.id.chat_msg_enjoyBtn:
                     enjoyImage();
                     break;
+                case R.id.chat_bottom_menu:
+                    openMenu();
+                    break;
                 default:
                     break;
             }
         }
+    }
+    private void openMenu(){
+        startActivity(new Intent(ChatActivity.this,SelectPicPopupWindowActivity.class));
     }
 
     private class OnTouch implements View.OnTouchListener {

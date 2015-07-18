@@ -63,10 +63,14 @@
         </activity>
         <activity android:name="com.myim.Views.VersionActivity"/>
 
-        <activity android:name="com.myim.Views.ChatActivity"/>
+        <activity android:name="com.myim.Views.ChatActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize|keyboard"
+                />
         <activity android:name="com.myim.Views.MainActivity"/>
         <activity android:name="com.myim.Views.RockActivity"/>
-        <activity android:name="com.myim.Views.RegisterActivity"/>
+        <activity android:name="com.myim.Views.RegisterActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize|keyboard"
+                />
         <activity android:name="com.myim.Views.PositionActivity"/>
         <activity android:name="com.myim.Views.MsgListAllActivity"/>
         <activity android:name="com.myim.Views.ContactActivity"/>
@@ -79,6 +83,8 @@
                   android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity android:name="com.myim.Views.PersonalActivity"/>
         <activity android:name="com.myim.CustomTool.setAudioController"/>
+        <activity android:name="com.myim.Views.SelectPicPopupWindowActivity"
+                  android:theme="@style/MyDialogStyleBottom" />/>
 
 
         <activity android:name="com.myim.Views.StartUpActivity"

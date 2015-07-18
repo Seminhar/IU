@@ -1,6 +1,7 @@
 package com.myim.Views;
 
 import android.app.ProgressDialog;
+import android.content.res.Configuration;
 import android.os.Handler;
 import android.os.Message;
 import com.myim.NetService.Constant;
@@ -23,6 +24,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.*;
 import com.example.IU.R;
+import com.myim.Operation.getPhotoFilenamePath;
 import com.myim.Services.ChatService;
 import com.myim.Services.SubscribeService;
 import com.myim.Util.BitmapUtil;
@@ -51,7 +53,7 @@ public class RegisterActivity extends Activity {
     private static String tempFile = null;
     private boolean isRegister = false;
     private Bitmap photo = null;
-    private ProgressDialog registerProgressDialog ;
+    private ProgressDialog registerProgressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,7 +92,9 @@ public class RegisterActivity extends Activity {
         btn_cancel.setOnClickListener(new OnClick());
         headView.setOnClickListener(new OnClick());
 
-
+/**
+ * 性别选择checked
+ */
         radioSex.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == male.getId()) {
@@ -107,14 +111,17 @@ public class RegisterActivity extends Activity {
         });
     }
 
-
+    @Override
+    public void onConfigurationChanged(Configuration config) {
+        super.onConfigurationChanged(config);
+    }
     /**
      * 使用当前系统时间生成照片文件名字
      */
     private String getPhotoFileName() {
-        String dataTime=null;
-        GetTimeFormat timeFormat=new GetTimeFormat();
-        dataTime=timeFormat.getImgNaTime();
+        String dataTime = null;
+        GetTimeFormat timeFormat = new GetTimeFormat();
+        dataTime = timeFormat.getImgNaTime();
 
         try {
             File file = Environment.getExternalStorageDirectory();
@@ -129,7 +136,7 @@ public class RegisterActivity extends Activity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        file_dir_Name = fileDir + "/" + dataTime+ ".jpg";//
+        file_dir_Name = fileDir + "/" + dataTime + ".jpg";//
         return file_dir_Name;
     }
 
@@ -162,13 +169,13 @@ public class RegisterActivity extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        tempFile = getPhotoFileName();
+                        tempFile = getPhotoFilenamePath.getPhotoFileName(RegisterActivity.this);
                         Log.i("pathAll", tempFile.trim());
                         Log.i("path", tempFile.substring(0, 15).trim());
                         Log.i("filename", tempFile.substring(15).trim());
                         try {
                             Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(tempFile.substring(0, 14), tempFile.substring(14).trim())));
+                            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(tempFile.substring(0, tempFile.length() - 23), tempFile.substring(tempFile.length() - 23).trim())));
                             startActivityForResult(intent, PHOTO_REQUEST_TAKEPHOTO);
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -225,6 +232,7 @@ public class RegisterActivity extends Activity {
         }
     }
 
+
     /**
      * 裁剪图片
      *
@@ -267,6 +275,7 @@ public class RegisterActivity extends Activity {
      * check of register
      */
     String userId;
+
     private void RegisterCheck() {
 
         userId = inputUsername.getText().toString().trim();
@@ -321,7 +330,7 @@ public class RegisterActivity extends Activity {
                 int rtn;
                 rtn = jc.register(userId, pwd, nickname, email, sex, BitmapUtil.getBitmapByteFromBitmap(photo));
                 Message msg = new Message();
-                msg.what=rtn;
+                msg.what = rtn;
                 registerHandler.sendMessage(msg);
             }
         });
@@ -329,6 +338,7 @@ public class RegisterActivity extends Activity {
 
 
     }
+
     Handler registerHandler = new android.os.Handler() {
         @Override
         public void handleMessage(android.os.Message msg) {
@@ -336,13 +346,10 @@ public class RegisterActivity extends Activity {
             if (msg.what == Constant.NOT_CONNECT_TO_SERVER) {
                 registerProgressDialog.dismiss();
                 Toast.makeText(RegisterActivity.this, "注册失败，请检查网络", Toast.LENGTH_LONG).show();
-            }
-            else if(msg.what ==Constant.ACCOUNT_EXISTED)
-            {
+            } else if (msg.what == Constant.ACCOUNT_EXISTED) {
                 registerProgressDialog.dismiss();
                 Toast.makeText(RegisterActivity.this, "注册失败, 该用户名已存在", Toast.LENGTH_LONG).show();
-            }
-            else if (msg.what == Constant.SUCCESS) {
+            } else if (msg.what == Constant.SUCCESS) {
 //                // Contact Listener Service
 //                Intent subscribeService = new Intent(RegisterActivity.this,SubscribeService.class);
 //                RegisterActivity.this.startService(subscribeService);
@@ -353,11 +360,11 @@ public class RegisterActivity extends Activity {
 
                 registerProgressDialog.dismiss();
                 Toast.makeText(RegisterActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
-               // Constant.USER_NAME=userId;
+                // Constant.USER_NAME=userId;
 //                Intent intent = new Intent();
 //                intent.setClass(RegisterActivity.this, MainActivity.class);
 //                startActivity(intent);
-                startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                 RegisterActivity.this.finish();
             }
             super.handleMessage(msg);
