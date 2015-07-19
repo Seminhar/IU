@@ -131,8 +131,8 @@
       <file leaf-file-name="ChatActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2063228">
-              <caret line="722" column="31" selection-start-line="722" selection-start-column="31" selection-end-line="722" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.7903494">
+              <caret line="710" column="0" selection-start-line="710" selection-start-column="0" selection-end-line="710" selection-end-column="0" />
               <folding>
                 <element signature="method#sendMsg#0;class#ChatActivity#0" expanded="false" />
                 <element signature="method#showDialog#0;class#ChatActivity#0" expanded="false" />
@@ -870,7 +870,7 @@
       <workItem from="1437115356946" duration="18880000" />
       <workItem from="1437202784062" duration="24679000" />
       <workItem from="1437310960071" duration="7301000" />
-      <workItem from="1437320440953" duration="2230000" />
+      <workItem from="1437320440953" duration="2327000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1436939830653</created>
@@ -1046,11 +1046,17 @@
       <option name="project" value="LOCAL" />
       <updated>1437322159666</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="修复录音问题">
+      <created>1437322685239</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1437322685239</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326293000" />
+    <option name="totallyTimeSpent" value="326390000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1582,8 +1588,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2063228">
-          <caret line="722" column="31" selection-start-line="722" selection-start-column="31" selection-end-line="722" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.7903494">
+          <caret line="710" column="0" selection-start-line="710" selection-start-column="0" selection-end-line="710" selection-end-column="0" />
           <folding>
             <element signature="method#sendMsg#0;class#ChatActivity#0" expanded="false" />
             <element signature="method#showDialog#0;class#ChatActivity#0" expanded="false" />
