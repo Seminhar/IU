@@ -2,12 +2,31 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:orientation="vertical">
+    <RelativeLayout
+            android:id="@+id/contact_top"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_title_height"
+            android:background="@color/deepskyblue"
+            android:layout_alignParentTop="true"
+            >
+
+        <TextView
+                android:id="@+id/contact_top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/top_title_bar_textSize"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
 <ExpandableListView
         android:id="@+id/contact_list"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
         android:groupIndicator="@null">
 
 </ExpandableListView>

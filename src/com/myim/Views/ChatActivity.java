@@ -89,6 +89,7 @@ public class ChatActivity extends Activity {
     private MediaPlayer mMediaPlayer;
     private Thread mRecordThread;
     public Context context;
+
     /**
      *
      */
@@ -106,7 +107,7 @@ public class ChatActivity extends Activity {
     private String username = null;
     private String msgContent = null;
     private Button chat_msg_enjoyBtn = null;
-    private ImageButton chat_menu=null;
+    private ImageButton chat_menu = null;
     ContactPeer cp = ContactPeer.getInstance(this);
     private static final int PHOTO_REQUEST_GALLERY = 1;
     private static final int PHOTO_REQUEST_TAKEPHOTO = 2;
@@ -115,7 +116,8 @@ public class ChatActivity extends Activity {
     private static String file_dir_Name = null;
     private static File fileDir = null;
     private static String tempFile = null;
-
+    private static boolean cancelRecord;
+   private  static boolean shortTime;
     Intent intent = new Intent();
     Bundle bundle = new Bundle();
 
@@ -140,8 +142,8 @@ public class ChatActivity extends Activity {
         chat_contact_name = (TextView) findViewById(R.id.chat_contact_name);
         chat_msg_button = (TextView) findViewById(R.id.chat_msg_button);
         chat_bottom_add = (ImageButton) findViewById(R.id.chat_bottom_add);
-        chat_menu=(ImageButton) findViewById(R.id.chat_bottom_menu);
-        chat_msg_enjoyBtn= (Button) findViewById(R.id.chat_msg_enjoyBtn);
+        chat_menu = (ImageButton) findViewById(R.id.chat_bottom_menu);
+        chat_msg_enjoyBtn = (Button) findViewById(R.id.chat_msg_enjoyBtn);
         /**
          *录音按钮及相关布局
          */
@@ -166,11 +168,12 @@ public class ChatActivity extends Activity {
 
         chat = ChatManager.getInstanceFor(jc.getConnection()).createChat(username + "@" + Constant.SERVICE_NAME, null);
         initChatList();
-        adapter = new MyChatAdapter(this, chatList,chatListView);
+        adapter = new MyChatAdapter(this, chatList, chatListView);
         chatListView.setAdapter(adapter);
         initReceiver();
     }
 
+    //三星手机拍照旋转问题
     @Override
     public void onConfigurationChanged(Configuration config) {
         super.onConfigurationChanged(config);
@@ -207,7 +210,6 @@ public class ChatActivity extends Activity {
         try {
             chat.sendMessage(myWord);
             ChatMessage msg = new ChatMessage(0, myWord, Constant.USER_NAME, username, time, ChatMessage.SENT_MSG, ChatMessage.TEXT_MIME);
-
             chatList.add(msg);
             new ChatHistoryTblHelper(this).saveChatHistory(msg);
             editText.setText("");
@@ -222,7 +224,6 @@ public class ChatActivity extends Activity {
             noti.setFrom(Constant.USER_NAME);
             noti.setContent(myWord);
             noti.setTo(username);
-
             noti.setTime(new GetTimeFormat().getTimeFull());
             NotificationTblHelper notificationTblHelper = new NotificationTblHelper(ChatActivity.this);
             notificationTblHelper.saveNotification(noti);
@@ -237,38 +238,6 @@ public class ChatActivity extends Activity {
         adapter.notifyDataSetChanged();
         chatListView.setSelection(chatList.size() - 1);
     }
-
-/*    *//**
-     * 使用当前系统时间生成照片文件名字
-     *//*
-    private String getPhotoFileName() {
-        String dataTime=null;
-        GetTimeFormat timeFormat=new GetTimeFormat();
-        dataTime=timeFormat.getImgNaTime();
-        try {
-            String location ;
-            if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-                location = context.getExternalFilesDir(null).getAbsolutePath();
-            }
-            else
-                location = context.getCacheDir().getAbsolutePath();
-
-           *//* File file = Environment.getExternalStorageDirectory();
-            if (file == null) {
-                Toast.makeText(ChatActivity.this, "请插入SD卡", Toast.LENGTH_SHORT).show();
-            }*//*
-            fileDir = new File(location, "Image");
-            if (!fileDir.exists()) {
-                fileDir.mkdirs();
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        file_dir_Name = fileDir + "/" + dataTime+ ".jpg";//
-        return file_dir_Name;
-    }*/
-
 
     /**
      * 点击头像选择弹出对话框
@@ -449,23 +418,27 @@ public class ChatActivity extends Activity {
             }
         }
     }
-    private void openMenu(){
-        startActivity(new Intent(ChatActivity.this,SelectPicPopupWindowActivity.class));
+
+    //弹出底部隐藏的菜单
+    private void openMenu() {
+
+        startActivity(new Intent(ChatActivity.this, SelectPicPopupWindowActivity.class));
+
     }
 
+    //录音  手指相关动作的响应
     private class OnTouch implements View.OnTouchListener {
         public boolean onTouch(View v, MotionEvent event) {
             switch (event.getAction()) {
                 case MotionEvent.ACTION_DOWN: // 按下按钮
                     if (recordState != RECORD_ON) {
                         downY = event.getY();
-
-                        // deleteOldFile.deleteOldFile(RECORD_FILENAME);
+                        //deleteOldFile.deleteOldFile(RECORD_FILENAME);
                         mAudioRecorder = new AudioRecorder(RECORD_FILENAME, context);
                         recordState = RECORD_ON;
                         try {
                             mAudioRecorder.start();
-                            recordTimethread();
+                            recordTimethread();             //录音线程开始，即正式开始录音
                             showVoiceDialog(0);
                         } catch (IOException e) {
                             e.printStackTrace();
@@ -474,19 +447,29 @@ public class ChatActivity extends Activity {
                     break;
                 case MotionEvent.ACTION_MOVE:                // 滑动手指
                     float moveY = event.getY();
+
                     if (moveY - downY > 50) {               //downY表示按下时的坐标  move表示移动时的坐标
                         //两者之差代表移动的距离   往上坐标变小
-                        moveState = true;                   //判断手机是否移动
+                        moveState = true;                   //判断手指是否移动
                         showVoiceDialog(1);                 //1代表滑动后显示的对话框，即松开可取消录音
+                       cancelRecord=true;
                     }
+                    else {
+                        cancelRecord=false;
+                    }
+
                     if (moveY - downY < 20) {
                         moveState = false;
                         showVoiceDialog(0);
                     }
                     break;
+
+
                 case MotionEvent.ACTION_CANCEL:
+
                 case MotionEvent.ACTION_UP:        // 松开手指
                     recordLayout.setVisibility(View.INVISIBLE);
+
                     Log.i("----------》》", "录音结束");
                     if (recordState == RECORD_ON) {
                         recordState = RECORD_OFF;
@@ -501,17 +484,24 @@ public class ChatActivity extends Activity {
                             e.printStackTrace();
                         }
                         File filename = getAmrPath();
-                        if (filename != null) {
-                            sendVoice(filename);                       //调用发送方法
+                        if(cancelRecord){
+                            deleteFile(filename.getName());            //取消后删除录音文件
+                            Log.i("--------------->", "删除已有语音"+filename.getName());
                         }
                         if (!moveState) {
                             if (recodeTime < MIN_RECORD_TIME) {
                                 showWarnToast("时间太短,录音失败");
-                            }/* else {
-                                mTvRecordTxt.setText("录音时间:"
-                                        + ((int) recodeTime));
-                                mTvRecordPath.setText("文件路径:" + getAmrPath());
-                            }*/
+                                shortTime=false;
+                            }
+                            else {
+                                shortTime=true;
+                            }
+                        if (filename != null&&!cancelRecord&&shortTime) {
+                            sendVoice(filename);                         //调用发送方法
+                            Log.i("--------------->","发送语音");
+
+                        }
+
                         }
                         moveState = false;
                     }
@@ -533,10 +523,9 @@ public class ChatActivity extends Activity {
                 } else {
                     //从服务器加载thumbnail
                     Bitmap bitmap = BitmapUtil.getBitmapFromUrl(url);
-                    if(bitmap!=null)
-                    {
+                    if (bitmap != null) {
                         String fileName = new File(url).getName();
-                        String location  = SysStorageUtil.getStorageLocation(context);
+                        String location = SysStorageUtil.getStorageLocation(context);
                         String pathName = location + "/" + Constant.THUMBNAIL_DIR + "/" + fileName;//文件存储路径
                         BitmapUtil.saveBitmapToLocal(pathName, bitmap);
 
@@ -584,7 +573,6 @@ public class ChatActivity extends Activity {
             public void run() {
                 String url = null;
                 url = HttpFileUpload.uploadFile(file, "voice");
-
                 if (url.equals("false")) {
                     //Toast.makeText(ChatActivity.this, "语音发送失败，请稍候重试", Toast.LENGTH_LONG).show();
                     return;
@@ -624,7 +612,6 @@ public class ChatActivity extends Activity {
         t.start();
     }
 
-
     /**
      *
      */
@@ -643,7 +630,6 @@ public class ChatActivity extends Activity {
             chatListView.setSelection(chatList.size() - 1);
         }
     }
-
 
     /**
      * 录音部分
@@ -696,10 +682,6 @@ public class ChatActivity extends Activity {
         public void run() {
             recodeTime = 0.0f;
             while (recordState == RECORD_ON) {
-                // 限制录音时长
-                // if (recodeTime >= MAX_RECORD_TIME && MAX_RECORD_TIME != 0) {
-                // imgHandle.sendEmptyMessage(0);
-                // } else
                 {
                     try {
                         Thread.sleep(150);
@@ -737,12 +719,11 @@ public class ChatActivity extends Activity {
 
     // 获取文件手机路径
     private File getAmrPath() {
-
         String path;
         String mdir = "RECORD";
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
             path = context.getExternalFilesDir(null).getAbsolutePath();
-            System.out.println(path);
+            System.out.println("文件手机路径" + path+"文件名"+RECORD_FILENAME);
         } else {
             path = context.getCacheDir().getAbsolutePath();
         }
@@ -794,6 +775,7 @@ public class ChatActivity extends Activity {
 
     // 录音时显示Dialog
     void showVoiceDialog(int flag) {
+
         if (mRecordDialog == null) {
             mRecordDialog = new Dialog(ChatActivity.this, R.style.DialogStyle);
             mRecordDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -802,7 +784,6 @@ public class ChatActivity extends Activity {
                     WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
             mRecordDialog.setContentView(R.layout.record_dialog);
-
             mIvRecVolume = (ImageView) mRecordDialog.findViewById(R.id.record_dialog_img);
             mTvRecordDialogTxt = (TextView) mRecordDialog.findViewById(R.id.record_dialog_txt);
         }
@@ -814,7 +795,7 @@ public class ChatActivity extends Activity {
 
             default:
                 mIvRecVolume.setImageResource(R.drawable.record_animate_01);
-                mTvRecordDialogTxt.setText("向上滑动可取消录音");
+                mTvRecordDialogTxt.setText("向下滑动可取消录音");
                 break;
         }
         mTvRecordDialogTxt.setTextSize(14);

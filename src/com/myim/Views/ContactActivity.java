@@ -84,8 +84,6 @@ public class ContactActivity extends Activity {
 
     @Override
     protected void onPostResume() {
-
-
         reloadList();
         adapter = new ContactAdapter(this, names);
         eListView.setAdapter(adapter);

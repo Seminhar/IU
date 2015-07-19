@@ -12,6 +12,7 @@
     <string name="login_label_password">密码</string>
     <string name="register">没有帐号？ <a href="#">注册</a></string>
     <string name="register_title">注册</string>
+    <string name="contact_title">联系人</string>
     <string name="login">登录</string>
     <string name="button_logout">退出登录</string>
     <string name="login_status_logging_in">登录中...</string>
