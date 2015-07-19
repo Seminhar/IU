@@ -99,66 +99,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f350396f-8cc9-46c1-bd28-a7c4cb1e066e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/record_button.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/AndyViewPagerActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/AndyViewPagerActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$1.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$10.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$11.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$12.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$2.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$3.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$4.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$5.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$6.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$7.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$8.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$9.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$BroadReceiver.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$BroadReceiver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$OnClick.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$OnClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$OnTouch.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$OnTouch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ContactActivity$2.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ContactActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ContactActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ContactActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Game/DazzlingMenuActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Game/DazzlingMenuActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Game/DazzlingView$1.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Game/DazzlingView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Game/DazzlingView.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Game/DazzlingView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Operation/DeleteMsgListView.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Operation/DeleteMsgListView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Game/GameNumberActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Game/GameNumberActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/IU.apk" afterPath="$PROJECT_DIR$/out/production/IU/IU.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/IU.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/IU/IU.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Operation/ImageBig.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Operation/ImageBig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/LoginActivity$click.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/LoginActivity$click.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/LoginActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/MainActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Adapter/MsgListAdapter.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Adapter/MsgListAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/MsgListAllActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/MsgListAllActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/PersonalActivity$OnClick.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/PersonalActivity$OnClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/PersonalActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/PersonalActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/PositionActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/PositionActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Game/Prefs.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Game/Prefs.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$drawable.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$id.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$layout.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$menu.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$raw.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$string.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$style.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$styleable.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/example/IU/R.class" afterPath="$PROJECT_DIR$/out/production/IU/com/example/IU/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/RegisterActivity$OnClick.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/RegisterActivity$OnClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/RegisterActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/RegisterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$OnClick.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity$OnClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/SettingActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Game/TipsActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Game/TipsActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Game/game1tipsActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Game/game1tipsActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/CustomTool/setDialogImage.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/CustomTool/setDialogImage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java" afterPath="$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/myim/Views/ContactActivity.java" afterPath="$PROJECT_DIR$/src/com/myim/Views/ContactActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/chat_menu.xml" afterPath="$PROJECT_DIR$/res/layout/chat_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/chat_msg.xml" afterPath="$PROJECT_DIR$/res/layout/chat_msg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/contact_main.xml" afterPath="$PROJECT_DIR$/res/layout/contact_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IU.iws" />
@@ -191,8 +131,8 @@
       <file leaf-file-name="ChatActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7903494">
-              <caret line="632" column="0" selection-start-line="632" selection-start-column="0" selection-end-line="632" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.2063228">
+              <caret line="722" column="31" selection-start-line="722" selection-start-column="31" selection-end-line="722" selection-end-column="31" />
               <folding>
                 <element signature="method#sendMsg#0;class#ChatActivity#0" expanded="false" />
                 <element signature="method#showDialog#0;class#ChatActivity#0" expanded="false" />
@@ -930,7 +870,7 @@
       <workItem from="1437115356946" duration="18880000" />
       <workItem from="1437202784062" duration="24679000" />
       <workItem from="1437310960071" duration="7301000" />
-      <workItem from="1437320440953" duration="1664000" />
+      <workItem from="1437320440953" duration="2230000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1436939830653</created>
@@ -1100,11 +1040,17 @@
       <option name="project" value="LOCAL" />
       <updated>1437230521023</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="修复录音问题">
+      <created>1437322159666</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1437322159666</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325727000" />
+    <option name="totallyTimeSpent" value="326293000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1117,7 +1063,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1132,7 +1078,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15436241" sideWeight="0.48853868" order="7" side_tool="false" content_ui="tabs" x="27" y="475" width="1316" height="298" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2170487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2170487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22922637" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1206,7 +1152,8 @@
     <MESSAGE value="添加登录和注册页的edtext的蓝色边框" />
     <MESSAGE value="完善修改第一次合并" />
     <MESSAGE value="修复三星手机拍照问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复三星手机拍照问题" />
+    <MESSAGE value="修复录音问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复录音问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1550,6 +1497,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46531302">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1593,6 +1541,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28271407">
           <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1633,8 +1582,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7903494">
-          <caret line="632" column="0" selection-start-line="632" selection-start-column="0" selection-end-line="632" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.2063228">
+          <caret line="722" column="31" selection-start-line="722" selection-start-column="31" selection-end-line="722" selection-end-column="31" />
           <folding>
             <element signature="method#sendMsg#0;class#ChatActivity#0" expanded="false" />
             <element signature="method#showDialog#0;class#ChatActivity#0" expanded="false" />
