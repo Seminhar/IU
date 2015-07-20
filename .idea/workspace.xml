@@ -99,9 +99,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f350396f-8cc9-46c1-bd28-a7c4cb1e066e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/myim/Util/MessageProcessorUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/myim/Operation/notificationRemind.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/myim/CustomTool/processTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$1.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$2.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$3.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$3.class" />
@@ -113,7 +110,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/IU.apk" afterPath="$PROJECT_DIR$/out/production/IU/IU.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/IU.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/IU/IU.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java" afterPath="$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IU.iws" />
@@ -146,7 +142,7 @@
       <file leaf-file-name="ChatActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.542777">
+            <state vertical-scroll-proportion="0.6789474">
               <caret line="260" column="25" selection-start-line="260" selection-start-column="25" selection-end-line="260" selection-end-column="25" />
               <folding>
                 <element signature="e#6581#6582#0" expanded="true" />
@@ -881,7 +877,7 @@
       <workItem from="1437310960071" duration="7301000" />
       <workItem from="1437320440953" duration="3198000" />
       <workItem from="1437376692734" duration="1095000" />
-      <workItem from="1437377818278" duration="19127000" />
+      <workItem from="1437377818278" duration="19165000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1436939830653</created>
@@ -1087,11 +1083,17 @@
       <option name="project" value="LOCAL" />
       <updated>1437406536162</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="前后台检测判断">
+      <created>1437409803732</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1437409803732</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347483000" />
+    <option name="totallyTimeSpent" value="347521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1116,9 +1118,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10469799" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19597316" sideWeight="0.495702" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19597316" sideWeight="0.495702" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0040268456" sideWeight="0.48853868" order="7" side_tool="false" content_ui="tabs" x="27" y="475" width="1316" height="298" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0040268456" sideWeight="0.48853868" order="7" side_tool="false" content_ui="tabs" x="27" y="475" width="1316" height="298" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2170487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1196,7 +1198,8 @@
     <MESSAGE value="修复录音问题" />
     <MESSAGE value="修复一部分图片显示问题" />
     <MESSAGE value="完善消息通知" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善消息通知" />
+    <MESSAGE value="前后台检测判断" />
+    <option name="LAST_COMMIT_MESSAGE" value="前后台检测判断" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1643,7 +1646,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.542777">
+        <state vertical-scroll-proportion="0.6789474">
           <caret line="260" column="25" selection-start-line="260" selection-start-column="25" selection-end-line="260" selection-end-column="25" />
           <folding>
             <element signature="e#6581#6582#0" expanded="true" />
