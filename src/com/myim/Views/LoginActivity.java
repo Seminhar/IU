@@ -1,5 +1,6 @@
 package com.myim.Views;
 
+import android.app.ProgressDialog;
 import android.os.Environment;
 import android.util.Log;
 import com.myim.Beans.ChatMessage;
@@ -51,11 +52,13 @@ public class LoginActivity extends Activity {
     String password;
     boolean isLogin = false;
     JabberConnection jc = null;
+    ProgressDialog pd = null ;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        pd = new ProgressDialog(this);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.login);
         Context context = getApplicationContext();
@@ -105,7 +108,7 @@ public class LoginActivity extends Activity {
         } else {
             username = etusername.getText().toString().trim();
         }
-        System.out.println("用户名" + username);
+
         password = etpassword.getText().toString().trim();
         if (password == null || username.equals("") || password.length() <= 0) {
             etpassword.requestFocus();
@@ -114,12 +117,13 @@ public class LoginActivity extends Activity {
         } else {
             password = etpassword.getText().toString().trim();
         }
-        System.out.println("密码" + password);
+
 
         /**
          * 网络连接线程启动
          */
-
+        pd.setTitle("正在登录");
+        pd.show();
         new Thread(new Runnable() {
             public void run() {
                 jc = JabberConnection.getInstance();
@@ -130,7 +134,6 @@ public class LoginActivity extends Activity {
                 // Contact Listener Service
                 Intent subscribeService = new Intent(LoginActivity.this, SubscribeService.class);
                 LoginActivity.this.startService(subscribeService);
-
                 // Chat Listener Service
                 Intent chatService = new Intent(LoginActivity.this, ChatService.class);
                 LoginActivity.this.startService(chatService);
@@ -148,8 +151,6 @@ public class LoginActivity extends Activity {
                 if (isLogin) {
                     msg.what = 1;
 
-                    //Constant.USER_NAME=username;
-                    // Constant.PASS=password;
 
 
                 } else {
@@ -166,14 +167,15 @@ public class LoginActivity extends Activity {
     Handler handler = new android.os.Handler() {
         @Override
         public void handleMessage(android.os.Message msg) {
-
+            pd.hide();
             if (msg.what == 0) {
                 Toast.makeText(LoginActivity.this, "登陆失败!请检查网络或账号", Toast.LENGTH_SHORT).show();
             }
             if (msg.what == 1) {
                 ContactPeer contactPeer = ContactPeer.getInstance(LoginActivity.this);
-                //contactPeer.loadDataFromDB();
+                contactPeer.loadDataFromDB();
                 contactPeer.contactList = new ContactTblHelper(LoginActivity.this).loadFromServer();
+                JabberConnection.getInstance().getOfflineMsg(LoginActivity.this);
 //                // Contact Listener Service
 //                Intent subscribeService = new Intent(LoginActivity.this,SubscribeService.class);
 //                LoginActivity.this.startService(subscribeService);

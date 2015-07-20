@@ -206,6 +206,10 @@ public class PersonalActivity extends Activity {
             } else if (op == 2) {
                 boolean isUnFriSuccess = (boolean) msg.getData().get("isUnFriSuccess");
                 if (isUnFriSuccess) {
+                    org.jivesoftware.smack.packet.Message m = new org.jivesoftware.smack.packet.Message();
+                    m.setBody("delFri");
+                    m.setSubject("delFri");
+                    JabberConnection.getInstance().sendMessage(user.getUsername(), m);
                     cp.contactList.remove(user.getUsername());
                     new ContactTblHelper(PersonalActivity.this).removeContact(user.getUsername());
                     new NotificationTblHelper(PersonalActivity.this).removeNotification(user.getUsername());

@@ -2,6 +2,7 @@ package com.myim.Views;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -29,12 +30,13 @@ import com.myim.model.ContactPeer;
 public class StartUpActivity extends Activity {
     public static SharedPreferences sharedPreferences ;
     private SharedPreferences.Editor editor ;
-
+    ProgressDialog pd = null ;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
-
+        pd=new ProgressDialog(this);
+        pd.setTitle("正在登录");
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.startup);
 
@@ -87,12 +89,13 @@ public class StartUpActivity extends Activity {
         // If have username, automatically login
         else if(!Constant.PASS.equals("") && !Constant.USER_NAME.equals(""))
         {
+            pd.show();
             // Login
             new Thread(new Runnable() {
                 public void run() {
 
                     JabberConnection jc = JabberConnection.getInstance();
-                    jc = JabberConnection.getInstance();
+                    //jc = JabberConnection.getInstance();
 
                     Log.i("xmppCon", "connted = false");
                     jc.connectToXmppServer();
@@ -145,7 +148,7 @@ public class StartUpActivity extends Activity {
     Handler handler = new android.os.Handler() {
         @Override
         public void handleMessage(android.os.Message msg) {
-
+            pd.hide();
             if (msg.what == 0) {
                 Toast.makeText(StartUpActivity.this, "登陆失败!请检查网络或账号", Toast.LENGTH_SHORT).show();
             }
@@ -157,6 +160,7 @@ public class StartUpActivity extends Activity {
                 ContactPeer contactPeer = ContactPeer.getInstance(StartUpActivity.this);
                 contactPeer.loadDataFromDB();
                 contactPeer.contactList= new ContactTblHelper(StartUpActivity.this).loadFromServer();
+                JabberConnection.getInstance().getOfflineMsg(StartUpActivity.this);
 //                // Contact Listener Service
 //                Intent subscribeService = new Intent(LoginActivity.this,SubscribeService.class);
 //                LoginActivity.this.startService(subscribeService);

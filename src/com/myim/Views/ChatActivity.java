@@ -386,8 +386,8 @@ public class ChatActivity extends Activity {
         intent.putExtra("aspectX", 1);
         intent.putExtra("aspectY", 1);
         // outputX outputY 是裁剪图片宽高
-        intent.putExtra("outputX", 150);
-        intent.putExtra("outputY", 150);
+        intent.putExtra("outputX", 350);
+        intent.putExtra("outputY", 350);
         intent.putExtra("return-data", true);
         startActivityForResult(intent, PHOTO_CLIP);
     }
@@ -522,14 +522,20 @@ public class ChatActivity extends Activity {
                     return;
                 } else {
                     //从服务器加载thumbnail
-                    Bitmap bitmap = BitmapUtil.getBitmapFromUrl(url);
-                    if (bitmap != null) {
-                        String fileName = new File(url).getName();
-                        String location = SysStorageUtil.getStorageLocation(context);
-                        String pathName = location + "/" + Constant.THUMBNAIL_DIR + "/" + fileName;//文件存储路径
-                        BitmapUtil.saveBitmapToLocal(pathName, bitmap);
+                    String fileName = new File(url).getName();
+                    url = Constant.HTTP_HOST+"thumbnail/"+fileName ;
+                    String path = HttpFileUpload.download(url,Constant.THUMBNAIL_DIR,context);
+                    Bitmap bitmap = BitmapUtil.getBitmapFromLocal(path);
 
-                    }
+
+//                    if(bitmap!=null)
+//                    {
+//                        String fileName = new File(url).getName();
+//                        String location  = SysStorageUtil.getStorageLocation(context);
+//                        String pathName = location + "/" + Constant.THUMBNAIL_DIR + "/" + fileName;//文件存储路径
+//                        BitmapUtil.saveBitmapToLocal(pathName, bitmap);
+//
+//                    }
                     org.jivesoftware.smack.packet.Message msg = new org.jivesoftware.smack.packet.Message();
                     msg.setBody(url);
                     msg.setSubject("img");

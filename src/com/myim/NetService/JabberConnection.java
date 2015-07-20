@@ -1,23 +1,26 @@
 package com.myim.NetService;
 
+import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.SharedPreferences;
 import android.util.Log;
 import com.myim.Beans.User;
+import com.myim.Util.MessageProcessorUtil;
 import com.myim.Views.StartUpActivity;
 import org.jivesoftware.smack.*;
 import org.jivesoftware.smack.filter.AndFilter;
 import org.jivesoftware.smack.filter.PacketFilter;
 import org.jivesoftware.smack.filter.PacketIDFilter;
 import org.jivesoftware.smack.filter.PacketTypeFilter;
-import org.jivesoftware.smack.packet.IQ;
-import org.jivesoftware.smack.packet.Message;
-import org.jivesoftware.smack.packet.Packet;
-import org.jivesoftware.smack.packet.Registration;
+import org.jivesoftware.smack.packet.*;
 import org.jivesoftware.smack.tcp.XMPPTCPConnection;
+import org.jivesoftware.smackx.offline.OfflineMessageManager;
 import org.jivesoftware.smackx.vcardtemp.packet.VCard;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by PC on 2015-04-26.
@@ -34,6 +37,7 @@ public class JabberConnection {
     }
 
     public static JabberConnection getInstance() {
+
         if (jabberConnection == null) {
 
             jabberConnection = new JabberConnection();
@@ -41,9 +45,10 @@ public class JabberConnection {
 
         }
         return jabberConnection;
-
-
     }
+
+
+
     public XMPPConnection getConnection()
     {
         return  xmppConnection;
@@ -53,6 +58,7 @@ public class JabberConnection {
             ConnectionConfiguration config = new ConnectionConfiguration(Constant.XMPP_HOST, Constant.XMPP_PORT);
             SASLAuthentication.supportSASLMechanism("PLAIN", 0);
             config.setSecurityMode(ConnectionConfiguration.SecurityMode.disabled);
+            config.setSendPresence(false);
             Roster.setDefaultSubscriptionMode(Roster.SubscriptionMode.accept_all);
             xmppConnection = new XMPPTCPConnection(config);
 
@@ -65,6 +71,7 @@ public class JabberConnection {
             Log.i("xmppConnection ", "Error xmppConnection is null");
             b= false;
         }
+
         //  else if (xmppConnection!=null && xmppConnection.isConnected()==false) {
         else if(xmppConnection!=null && xmppConnection.isConnected()==false) {
             xmppConnection.addConnectionListener(jabberConnectionListener );
@@ -84,6 +91,31 @@ public class JabberConnection {
             }
         }
         return b;
+    }
+    public void getOfflineMsg (Context context)
+    {
+        List<Message> list = new ArrayList<Message>();
+        OfflineMessageManager ofmm = new OfflineMessageManager(xmppConnection);
+        try {
+            list = ofmm.getMessages();
+            MessageProcessorUtil mpu = new MessageProcessorUtil(context);
+            for(Message m:list)
+            {
+                Log.i("offlinemsg","From:"+m.getFrom()+": "+m.getBody());
+                mpu.process(m);
+
+            }
+            ofmm.deleteMessages();
+            Presence presence = new Presence(Presence.Type.available);
+            xmppConnection.sendPacket(presence);
+        } catch (SmackException.NoResponseException e) {
+            e.printStackTrace();
+        } catch (XMPPException.XMPPErrorException e) {
+            e.printStackTrace();
+        } catch (SmackException.NotConnectedException e) {
+            e.printStackTrace();
+        }
+
     }
     public boolean login(String user, String pass)
     {
@@ -109,6 +141,7 @@ public class JabberConnection {
                 Constant.user.loadVCard();
 
                 Log.i("xmppConnection", "Login Sucess");
+
 
             } catch (XMPPException e) {
                 e.printStackTrace();

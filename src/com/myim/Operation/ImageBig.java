@@ -19,6 +19,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import com.example.IU.R;
+import com.myim.NetService.Constant;
 import com.myim.NetService.HttpFileUpload;
 
 import java.io.File;
@@ -38,6 +39,8 @@ public class ImageBig {
         this.context = context;
         this.fileDir = fileDir;
         this.fileName = fileName;
+        String f = new File(fileName).getName();
+        this.fileName = Constant.HTTP_HOST+fileDir+"/"+f ;
         //imgView = new ImageView(context);
         View view = ((Activity)context).getLayoutInflater().inflate(R.layout.imagebig, null);
         imgView = (ImageView) view.findViewById(R.id.imgV);
@@ -46,7 +49,7 @@ public class ImageBig {
 
         //dialog = new AlertDialog.Builder(context).create();
 
-        //dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//ÉèÖÃÈ«ÆÁ
+        //dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½
         Window window = dialog.getWindow();
         WindowManager.LayoutParams  wl = window.getAttributes();
         wl.width = ViewGroup.LayoutParams.MATCH_PARENT;

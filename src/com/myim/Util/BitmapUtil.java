@@ -115,7 +115,7 @@ public class BitmapUtil {
                 parent.mkdirs();
             }
             FileOutputStream out = new FileOutputStream(f);
-            bitmap.compress(Bitmap.CompressFormat.PNG, 90, out);
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
             try {
                 out.flush();
             } catch (IOException e) {

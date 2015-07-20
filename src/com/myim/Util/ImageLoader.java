@@ -9,6 +9,8 @@ import android.widget.ListView;
 import com.example.IU.R;
 import com.myim.Adapter.MyChatAdapter;
 import com.myim.Beans.ChatMessage;
+import com.myim.NetService.Constant;
+import com.myim.NetService.HttpFileUpload;
 
 import java.io.File;
 import java.util.HashSet;
@@ -54,7 +56,7 @@ public class ImageLoader {
     public Bitmap getBitmapFromLocal(String subFolder,String fileName)
     {
         String location  = SysStorageUtil.getStorageLocation(context);
-        String pathName = location + "/" + subFolder + "/" + fileName;//文件存储路径
+        String pathName = location + "/" + subFolder + "/" + fileName;//????洢·??
         return BitmapUtil.getBitmapFromLocal(pathName);
     }
 
@@ -63,15 +65,15 @@ public class ImageLoader {
     {
         String fileName = new File(url).getName();
         String location  = SysStorageUtil.getStorageLocation(context);
-        String pathName = location + "/" + subFolder + "/" + fileName;//文件存储路径
+        String pathName = location + "/" + subFolder + "/" + fileName;//????洢·??
         BitmapUtil.saveBitmapToLocal(pathName, bitmap);
     }
 
     /**
-     * 部分加载图片
-     * @param start 从
-     * @param end 到
-     * @param subFolder 保存到哪里?
+     * ?????????
+     * @param start ??
+     * @param end ??
+     * @param subFolder ???浽?????
      */
     public void showImageWithRange(int start , int end,String subFolder )
     {
@@ -81,21 +83,24 @@ public class ImageLoader {
             ChatMessage msg = MyChatAdapter.allContents.get(i);
             String mime = msg.getMime();
 
-            //只有图片类型的消息才进行加载
+            //?????????????????м???
             if(mime.equals(ChatMessage.IMG_MIME)) {
                 String url = msg.getContent();
+                String fileName = new File(url).getName();
                 Bitmap bitmap = getBitmapFromCache(url);
                 if (bitmap == null) {
-                    String fileName = new File(url).getName();
+
                     bitmap = getBitmapFromLocal(subFolder, fileName);
                     if (bitmap != null) {
                         addBitmapToCache(url, bitmap);
                         ImageView imgV = (ImageView) listView.findViewWithTag(url);
                         imgV.setImageBitmap(bitmap);
 
-                    } else {
+                    }
+                    else {
 
                         // LoadImageAsyn loadImageAsyn = new LoadImageAsyn(imgV,url,subFolder);
+                        url = Constant.HTTP_HOST+"thumbnail/"+fileName ;
                         LoadImageAsyn loadImageAsyn = new LoadImageAsyn(url, subFolder);
                         loadImageAsyn.execute(url);
                         tasks.add(loadImageAsyn);
@@ -160,13 +165,16 @@ public class ImageLoader {
         }
         @Override
         protected Bitmap doInBackground(String... params) {
-            Bitmap bitmap = BitmapUtil.getBitmapFromUrl(params[0]);
+
+            String path = HttpFileUpload.download(params[0],Constant.THUMBNAIL_DIR,context);
+            Bitmap bitmap = BitmapUtil.getBitmapFromLocal(path);
+            //Bitmap bitmap = BitmapUtil.getBitmapFromUrl(params[0]);
             if(bitmap!=null)
             {
                 addBitmapToCache(params[0],bitmap);
-                // 保存图片到本地
-                if(subFolder!=null)
-                    saveBitmapToLocal(bitmap,subFolder,params[0]);
+                // ????????????
+//                if(subFolder!=null)
+//                    saveBitmapToLocal(bitmap,subFolder,params[0]);
             }
 
             return bitmap;

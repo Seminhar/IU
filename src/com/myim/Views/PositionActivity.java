@@ -28,6 +28,7 @@ import com.myim.Game.game1tipsActivity;
 import com.myim.NetService.Constant;
 import com.myim.NetService.HttpConnet;
 import com.myim.Util.NearByUserUtil;
+import com.myim.model.ContactPeer;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
@@ -45,6 +46,7 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -64,7 +66,7 @@ public class PositionActivity extends Activity implements AMap.InfoWindowAdapter
     private ProgressDialog progressDialog;
     private Button zoom;
     private Boolean nbuLoaded = false;
-    private PolylineOptions polylineOptions;
+
     private ArrayList<NearByUser> nearByUsers;
     private HashMap<String, Integer> markerUsersMap;
     public Handler d = new Handler() {
@@ -265,6 +267,7 @@ public class PositionActivity extends Activity implements AMap.InfoWindowAdapter
         aMap.setOnInfoWindowClickListener(this);
         aMap.setInfoWindowAdapter(this);
         aMap.setLocationSource(this);// 设置定位监听
+
         aMap.getUiSettings().setMyLocationButtonEnabled(true);// 设置默认定位按钮是否显示
         aMap.setMyLocationEnabled(true);// 设置为true表示显示定位层并可触发定位，false表示隐藏定位层并不可触发定位，默认是false
         // 设置定位的类型为定位模式 ，可以由定位、跟随或地图根据面向方向旋转几种
@@ -418,6 +421,7 @@ public class PositionActivity extends Activity implements AMap.InfoWindowAdapter
         } else
             proName.setText("");
         NearByUser nbu = nearByUsers.get(markerUsersMap.get(marker.getId()));
+        ContactPeer.getInstance(PositionActivity.this).getProfilePic(nbu.getUserName(),img);
         String dis = nbu.getDistance() + "";
         int distance = (int) (nbu.getDistance() * 1000);
         location.setText(distance + "米");

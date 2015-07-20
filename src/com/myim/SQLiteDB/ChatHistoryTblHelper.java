@@ -56,7 +56,11 @@ public class ChatHistoryTblHelper {
             msg.setFrom(cursor.getString(cursor.getColumnIndex("ChFrom")));
             msg.setTo(cursor.getString(cursor.getColumnIndex("ChTo")));
             msg.setTime(cursor.getString(cursor.getColumnIndex("ChTime")));
-            msg.setType(cursor.getInt(cursor.getColumnIndex("ChType")));
+            if(msg.getFrom().equals(Constant.USER_NAME))
+                msg.setType(1);
+            else
+                msg.setType(0);
+
 
             msg.setMime(cursor.getString(cursor.getColumnIndex("ChMime")));
             list.add(msg);

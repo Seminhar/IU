@@ -82,7 +82,7 @@ public class AndyViewPagerActivity extends Activity implements OnClickListener, 
                     new Thread(new Runnable() {
                         public void run() {
                             JabberConnection jc = JabberConnection.getInstance();
-                            jc = JabberConnection.getInstance();
+
                             jc.connectToXmppServer();
                             // Start Services
 
