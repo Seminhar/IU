@@ -4,8 +4,7 @@ package com.myim.Views;
  * Created by Administrator on 2015/4/4 0004.
  */
 
-import android.app.AlertDialog;
-import android.app.Dialog;
+import android.app.*;
 import android.content.*;
 
 import android.content.res.Configuration;
@@ -30,7 +29,6 @@ import com.myim.Listener.MsgListener;
 import com.myim.NetService.Constant;
 import com.myim.NetService.HttpFileUpload;
 import com.myim.NetService.JabberConnection;
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.*;
 
@@ -54,6 +52,9 @@ import org.jivesoftware.smack.Chat;
 import org.jivesoftware.smack.ChatManager;
 import org.jivesoftware.smack.SmackException;
 import org.jivesoftware.smack.XMPPException;
+
+import static android.app.ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND;
+import static android.app.ActivityManager.RunningAppProcessInfo.IMPORTANCE_VISIBLE;
 
 public class ChatActivity extends Activity {
 
@@ -117,7 +118,7 @@ public class ChatActivity extends Activity {
     private static File fileDir = null;
     private static String tempFile = null;
     private static boolean cancelRecord;
-   private  static boolean shortTime;
+    private static boolean shortTime;
     Intent intent = new Intent();
     Bundle bundle = new Bundle();
 
@@ -184,6 +185,7 @@ public class ChatActivity extends Activity {
         unregisterReceiver(receiver);
         super.onDestroy();
     }
+
 
     private void initChatList() {
         chatList = new ChatHistoryTblHelper(this).getChatHistoryList(username);
@@ -253,7 +255,6 @@ public class ChatActivity extends Activity {
                         try {
                             Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                             intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(tempFile.substring(0, tempFile.length() - 23), tempFile.substring(tempFile.length() - 23).trim())));
-
                             startActivityForResult(intent, PHOTO_REQUEST_TAKEPHOTO);
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -452,10 +453,9 @@ public class ChatActivity extends Activity {
                         //两者之差代表移动的距离   往上坐标变小
                         moveState = true;                   //判断手指是否移动
                         showVoiceDialog(1);                 //1代表滑动后显示的对话框，即松开可取消录音
-                       cancelRecord=true;
-                    }
-                    else {
-                        cancelRecord=false;
+                        cancelRecord = true;
+                    } else {
+                        cancelRecord = false;
                     }
 
                     if (moveY - downY < 20) {
@@ -484,23 +484,22 @@ public class ChatActivity extends Activity {
                             e.printStackTrace();
                         }
                         File filename = getAmrPath();
-                        if(cancelRecord){
+                        if (cancelRecord) {
                             deleteFile(filename.getName());            //取消后删除录音文件
-                            Log.i("--------------->", "删除已有语音"+filename.getName());
+                            Log.i("--------------->", "删除已有语音" + filename.getName());
                         }
                         if (!moveState) {
                             if (recodeTime < MIN_RECORD_TIME) {
                                 showWarnToast("时间太短,录音失败");
-                                shortTime=false;
+                                shortTime = false;
+                            } else {
+                                shortTime = true;
                             }
-                            else {
-                                shortTime=true;
-                            }
-                        if (filename != null&&!cancelRecord&&shortTime) {
-                            sendVoice(filename);                         //调用发送方法
-                            Log.i("--------------->","发送语音");
+                            if (filename != null && !cancelRecord && shortTime) {
+                                sendVoice(filename);                         //调用发送方法
+                                Log.i("--------------->", "发送语音");
 
-                        }
+                            }
 
                         }
                         moveState = false;
@@ -523,8 +522,8 @@ public class ChatActivity extends Activity {
                 } else {
                     //从服务器加载thumbnail
                     String fileName = new File(url).getName();
-                    url = Constant.HTTP_HOST+"thumbnail/"+fileName ;
-                    String path = HttpFileUpload.download(url,Constant.THUMBNAIL_DIR,context);
+                    url = Constant.HTTP_HOST + "thumbnail/" + fileName;
+                    String path = HttpFileUpload.download(url, Constant.THUMBNAIL_DIR, context);
                     Bitmap bitmap = BitmapUtil.getBitmapFromLocal(path);
 
                     org.jivesoftware.smack.packet.Message msg = new org.jivesoftware.smack.packet.Message();
@@ -720,7 +719,7 @@ public class ChatActivity extends Activity {
         String mdir = "RECORD";
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
             path = context.getExternalFilesDir(null).getAbsolutePath();
-            System.out.println("文件手机路径" + path+"文件名"+RECORD_FILENAME);
+            System.out.println("文件手机路径" + path + "文件名" + RECORD_FILENAME);
         } else {
             path = context.getCacheDir().getAbsolutePath();
         }

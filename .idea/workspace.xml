@@ -99,6 +99,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f350396f-8cc9-46c1-bd28-a7c4cb1e066e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/myim/Util/MessageProcessorUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/myim/Operation/notificationRemind.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/myim/CustomTool/processTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$1.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$2.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$3.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$4.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$5.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$6.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$OnClick.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$OnClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$OnTouch.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity$OnTouch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity.class" afterPath="$PROJECT_DIR$/out/production/IU/com/myim/Views/ChatActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/IU.apk" afterPath="$PROJECT_DIR$/out/production/IU/IU.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IU/IU.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/IU/IU.unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java" afterPath="$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IU.iws" />
@@ -128,20 +143,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ChatActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ChatActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="781" column="0" selection-start-line="781" selection-start-column="0" selection-end-line="781" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.542777">
+              <caret line="260" column="25" selection-start-line="260" selection-start-column="25" selection-end-line="260" selection-end-column="25" />
               <folding>
-                <element signature="e#6475#6476#0" expanded="true" />
-                <element signature="e#6527#6528#0" expanded="true" />
-                <element signature="e#6681#6682#0" expanded="true" />
-                <element signature="e#6767#6768#0" expanded="true" />
+                <element signature="e#6581#6582#0" expanded="true" />
+                <element signature="e#6633#6634#0" expanded="true" />
+                <element signature="e#6788#6789#0" expanded="true" />
+                <element signature="e#6874#6875#0" expanded="true" />
                 <element signature="method#sendMsg#0;class#ChatActivity#0" expanded="false" />
-                <element signature="e#10379#10380#0" expanded="true" />
-                <element signature="e#10407#10408#0" expanded="true" />
-                <element signature="method#onActivityResult#0;class#ChatActivity#0" expanded="false" />
+                <element signature="e#10485#10486#0" expanded="true" />
+                <element signature="e#10513#10514#0" expanded="true" />
                 <element signature="method#sendVoice#0;class#ChatActivity#0" expanded="false" />
                 <element signature="class#BroadReceiver#0;class#ChatActivity#0" expanded="false" />
                 <element signature="method#recordPaly#0;class#ChatActivity#0" expanded="false" />
@@ -152,25 +166,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="record_dialog.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/record_dialog.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="ChatService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myim/Services/ChatService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0">
-              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageProcessorUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MessageProcessorUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/myim/Util/MessageProcessorUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8049327">
-              <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="144" column="39" selection-start-line="144" selection-start-column="39" selection-end-line="144" selection-end-column="39" />
+              <folding>
+                <element signature="e#1351#1352#0" expanded="true" />
+                <element signature="e#1389#1390#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,10 +193,18 @@
         <entry file="file://$PROJECT_DIR$/src/com/myim/CustomTool/processTask.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myim/Views/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -195,16 +217,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MsgListAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/myim/Adapter/MsgListAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.266666">
-              <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -277,13 +289,13 @@
         <option value="$PROJECT_DIR$/src/com/myim/Services/ChatService.java" />
         <option value="$PROJECT_DIR$/src/com/myim/Adapter/MyChatAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/myim/Views/SelectPicPopupWindowActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/record_dialog.xml" />
         <option value="$PROJECT_DIR$/src/com/myim/CustomTool/Processtask.java" />
         <option value="$PROJECT_DIR$/src/com/myim/CustomTool/ProcessTask.java" />
         <option value="$PROJECT_DIR$/src/com/myim/CustomTool/taskProcess.java" />
         <option value="$PROJECT_DIR$/src/com/myim/CustomTool/processTask.java" />
         <option value="$PROJECT_DIR$/src/com/myim/Util/MessageProcessorUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java" />
       </list>
     </option>
   </component>
@@ -350,148 +362,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myim" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myim" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myim" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myim" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myim" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CustomTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myim" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Adapter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1011,7 +881,7 @@
       <workItem from="1437310960071" duration="7301000" />
       <workItem from="1437320440953" duration="3198000" />
       <workItem from="1437376692734" duration="1095000" />
-      <workItem from="1437377818278" duration="15896000" />
+      <workItem from="1437377818278" duration="19127000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1436939830653</created>
@@ -1211,11 +1081,17 @@
       <option name="project" value="LOCAL" />
       <updated>1437406423090</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="完善消息通知">
+      <created>1437406536162</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1437406536162</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344252000" />
+    <option name="totallyTimeSpent" value="347483000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1240,9 +1116,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10469799" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2657718" sideWeight="0.495702" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19597316" sideWeight="0.495702" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36241612" sideWeight="0.48853868" order="7" side_tool="false" content_ui="tabs" x="27" y="475" width="1316" height="298" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0040268456" sideWeight="0.48853868" order="7" side_tool="false" content_ui="tabs" x="27" y="475" width="1316" height="298" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2170487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1324,7 +1200,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="174" />
+      <option name="time" value="175" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Unnamed">
@@ -1340,13 +1216,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../android-sdk/sources/android-19/android/content/res/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33260393">
-          <caret line="689" column="0" selection-start-line="689" selection-start-column="0" selection-end-line="689" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myim/Views/NearbyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5371901">
@@ -1432,13 +1301,6 @@
         <state vertical-scroll-proportion="0.72525597">
           <caret line="66" column="52" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1582,16 +1444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/StartUpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="164" column="41" selection-start-line="164" selection-start-column="41" selection-end-line="164" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myim/model/ContactPeer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1650,14 +1502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28422877">
-          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myim/Services/SubscribeService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5459273">
@@ -1682,14 +1526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Adapter/MsgListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.266666">
-          <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/chat_msg.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1697,36 +1533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44219068">
           <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="781" column="0" selection-start-line="781" selection-start-column="0" selection-end-line="781" selection-end-column="0" />
-          <folding>
-            <element signature="e#6475#6476#0" expanded="true" />
-            <element signature="e#6527#6528#0" expanded="true" />
-            <element signature="e#6681#6682#0" expanded="true" />
-            <element signature="e#6767#6768#0" expanded="true" />
-            <element signature="method#sendMsg#0;class#ChatActivity#0" expanded="false" />
-            <element signature="e#10379#10380#0" expanded="true" />
-            <element signature="e#10407#10408#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#ChatActivity#0" expanded="false" />
-            <element signature="method#sendVoice#0;class#ChatActivity#0" expanded="false" />
-            <element signature="class#BroadReceiver#0;class#ChatActivity#0" expanded="false" />
-            <element signature="method#recordPaly#0;class#ChatActivity#0" expanded="false" />
-            <element signature="method#setDialogImage#0;class#ChatActivity#0" expanded="false" />
-            <element signature="method#showWarnToast#0;class#ChatActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myim/Services/ChatService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.026845638">
-          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1747,6 +1553,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/asmack-android-8-4.0.7.jar!/org/jivesoftware/smack/XMPPConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.92">
+          <caret line="647" column="9" selection-start-line="647" selection-start-column="9" selection-end-line="647" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/StartUpActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Adapter/MsgListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6">
+          <caret line="108" column="42" selection-start-line="108" selection-start-column="42" selection-end-line="108" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myim/Operation/notificationRemind.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1757,13 +1595,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/record_dialog.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0">
+        <state vertical-scroll-proportion="0.88408643">
           <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Services/ChatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1771,18 +1625,40 @@
     <entry file="file://$PROJECT_DIR$/src/com/myim/CustomTool/processTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myim/Util/MessageProcessorUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8049327">
-          <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="144" column="39" selection-start-line="144" selection-start-column="39" selection-end-line="144" selection-end-column="39" />
+          <folding>
+            <element signature="e#1351#1352#0" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myim/Views/ChatActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.542777">
+          <caret line="260" column="25" selection-start-line="260" selection-start-column="25" selection-end-line="260" selection-end-column="25" />
+          <folding>
+            <element signature="e#6581#6582#0" expanded="true" />
+            <element signature="e#6633#6634#0" expanded="true" />
+            <element signature="e#6788#6789#0" expanded="true" />
+            <element signature="e#6874#6875#0" expanded="true" />
+            <element signature="method#sendMsg#0;class#ChatActivity#0" expanded="false" />
+            <element signature="e#10485#10486#0" expanded="true" />
+            <element signature="e#10513#10514#0" expanded="true" />
+            <element signature="method#sendVoice#0;class#ChatActivity#0" expanded="false" />
+            <element signature="class#BroadReceiver#0;class#ChatActivity#0" expanded="false" />
+            <element signature="method#recordPaly#0;class#ChatActivity#0" expanded="false" />
+            <element signature="method#setDialogImage#0;class#ChatActivity#0" expanded="false" />
+            <element signature="method#showWarnToast#0;class#ChatActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
