@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/res/anim" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-hdpi/map.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-hdpi/meet.png" charset="UTF-8" />
@@ -16,8 +16,10 @@
     <file url="file://$PROJECT_DIR$/res/drawable/chat_button_style.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/chat_menu.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/values/chat_windows.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/myim/NetService/Constant.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/myim/Util/MessageProcessorUtil.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/myim/Views/SelectPicPopupWindowActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/myim/Views/VersionActivity.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

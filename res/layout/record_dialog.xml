@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="vertical"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:layout_gravity="center"
-	android:gravity="center"
-    android:background="@drawable/record_bg"
-	android:padding="20dp" >
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical"
+			  android:gravity="center_vertical"
+			  android:background="@drawable/record_bg"
+			  android:layout_marginBottom="120dp"
+		>
 
-	<ImageView
+<ImageView
 		android:id="@+id/record_dialog_img"
 		android:layout_width="wrap_content"
-		android:layout_height="wrap_content" />
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:padding="10dp"
+		/>
 
-	<TextView
+<TextView
 		android:id="@+id/record_dialog_txt"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="5dp" />
+		android:padding="5dp"
+		android:layout_gravity="center"
+		/>
 
 </LinearLayout>

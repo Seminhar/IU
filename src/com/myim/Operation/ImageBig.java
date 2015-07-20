@@ -103,7 +103,6 @@ public class ImageBig {
                 imgView.setImageURI(Uri.fromFile(file));
                 //dialog.setView(imgView);
                 dialog.show();
-
                 imgView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

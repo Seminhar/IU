@@ -527,15 +527,6 @@ public class ChatActivity extends Activity {
                     String path = HttpFileUpload.download(url,Constant.THUMBNAIL_DIR,context);
                     Bitmap bitmap = BitmapUtil.getBitmapFromLocal(path);
 
-
-//                    if(bitmap!=null)
-//                    {
-//                        String fileName = new File(url).getName();
-//                        String location  = SysStorageUtil.getStorageLocation(context);
-//                        String pathName = location + "/" + Constant.THUMBNAIL_DIR + "/" + fileName;//文件存储路径
-//                        BitmapUtil.saveBitmapToLocal(pathName, bitmap);
-//
-//                    }
                     org.jivesoftware.smack.packet.Message msg = new org.jivesoftware.smack.packet.Message();
                     msg.setBody(url);
                     msg.setSubject("img");

@@ -221,7 +221,6 @@ public class MyChatAdapter extends BaseAdapter implements AbsListView.OnScrollLi
                         } else if (msgMime.equals(ChatMessage.VOICE_MIME)) {
                             convertView = LayoutInflater.from(context).inflate(R.layout.chat_voice_other, null);
                             holder.imgbtn = (ImageView) convertView.findViewById(R.id.chatList_ibtn);
-
                         }
                         holder.imageView = (ImageView) convertView.findViewById(R.id.chatList_image);
 
