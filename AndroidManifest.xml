@@ -84,7 +84,7 @@
         <activity android:name="com.myim.Views.PersonalActivity"/>
         <activity android:name="com.myim.CustomTool.setAudioController"/>
         <activity android:name="com.myim.Views.SelectPicPopupWindowActivity"
-                  android:theme="@style/MyDialogStyleBottom" />/>
+                  android:theme="@style/MyDialogStyleBottom" />
 
 
         <activity android:name="com.myim.Views.StartUpActivity"

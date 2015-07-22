@@ -15,29 +15,15 @@ import android.os.Vibrator;
  * Created by Administrator on 2015/7/10.
  */
 public class setAudioController extends Activity {
-//     private AudioManager audioMa;
-//     private Vibrator vibrator;
-    //音量变量
-    private int volume = 0;
-    //声音模式
-    private int mode;
+
     private SharedPreferences mBaseSettings;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 获取系统声音服务类
-//        audioMa = (AudioManager)getBaseContext(). getSystemService(Context.AUDIO_SERVICE);
-//        //获取系统震动服务类
-//        vibrator = (Vibrator) getSystemService(Service.VIBRATOR_SERVICE);
-
-    }
-    public void receivePic(boolean isChecked) {
-
-
     }
 
     /**
-     * 静音
+     *
      * @param audioMa
      * @param isCheck
      */
@@ -47,7 +33,7 @@ public class setAudioController extends Activity {
     }
 
     /**
-     * 震动
+     *
      * @param vibrator
      * @param isChecked
      */

@@ -14,7 +14,7 @@
         android:layout_height="40dip"
         android:layout_marginRight="5dip"
         android:layout_alignParentLeft="true"
-        android:background="@drawable/profile"
+
             />
     <TextView
         android:id="@+id/chatList_content"

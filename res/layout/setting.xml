@@ -80,7 +80,7 @@
                             style="@style/item"
                             android:id="@+id/switch_notification"
                             android:text="接受推送"
-                            android:checked="false"
+                            android:state_checked="false"
                             app:withTextInterval="16dp"
                             app:frameDrawable="@drawable/switch_frame"
                             app:stateDrawable="@drawable/selector_switch_state"

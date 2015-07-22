@@ -144,7 +144,7 @@ public class SettingActivity extends Activity {
                 SharedPreferences.Editor editor = StartUpActivity.sharedPreferences.edit();
                 editor.putBoolean("vibrate", isChecked);
                 editor.commit();
-                controller.Vibrate(vibrator, isChecked);
+                controller.Vibrate(vibrator,isChecked);
             }
         });
     }

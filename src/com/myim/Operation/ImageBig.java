@@ -81,15 +81,6 @@ public class ImageBig {
         });
         t.start();
 
-
-
-/*
-        InputStream is = getResources().openRawResource(R.drawable.tellcat4);
-        Drawable drawable = BitmapDrawable.createFromStream(is, null);
-        imgView.setImageDrawable(drawable);*/
-        //imgView.setImageResource(R.drawable.tellcat4);
-
-
     }
 
     Handler handler = new Handler() {

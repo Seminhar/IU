@@ -120,10 +120,9 @@ public class MessageProcessorUtil {
     }
 
     private void processVoiceMsg(Message msg) {
-        //User from = cp.contactList.get(User.getUsernameWithNoAt(msg.getFrom()));
+
         // 创建消息通知对象
         User newUser = ContactPeer.getInstance(context).contactList.get(User.getUsernameWithNoAt(msg.getFrom()));
-        //String from = User.getUsernameWithNoAt(msg.getFrom());
         NotificationMsg noti = new NotificationMsg();
 
         noti.setId(newUser.getUsername());
@@ -176,6 +175,12 @@ public class MessageProcessorUtil {
         new ContactTblHelper(context).saveContact(newUser);
         ContactActivity.needRefresh = true;
         context.sendBroadcast(intent);
+        ChatMessage chatMsg=new ChatMessage();
+        chatMsg.setContent(noti.getContent());
+//
+//        if (Constant.notification) {
+//               notificationRemind.notificationMSg(context,newUser,chatMsg);
+//        }
     }
 
     private void processDelFriMsg(Message msg) {

@@ -6,7 +6,7 @@ import com.myim.Beans.User;
  * Created by PC on 2015-04-26.
  */
 public class Constant {
-    public static final String XMPP_HOST="172.20.190.1";
+    public static final String XMPP_HOST="101.200.191.34";
     //public static final String XMPP_HOST="101.200.191.34";
     public static final int XMPP_PORT = 5222;
     public  static final String SERVICE_NAME="pc-pc";
@@ -39,7 +39,6 @@ public class Constant {
     public static  boolean notification;
     public static  boolean sound;
     public static  boolean vibrate;
-    public static boolean receivePic;
     public static boolean isLogin = false ;
     //audioFocuse
     public static boolean getFocus;

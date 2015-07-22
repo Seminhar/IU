@@ -14,7 +14,7 @@
             android:layout_height="40dip"
             android:layout_marginLeft="5dip"
             android:layout_alignParentRight="true"
-            android:background="@drawable/contact_3"/>
+            />
     <ImageView
             android:id="@+id/chatList_ibtn"
             android:layout_width="wrap_content"
